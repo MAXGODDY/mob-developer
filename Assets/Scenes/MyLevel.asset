@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MyLevel
   m_EditorClassIdentifier: 
   _enabled: 1
-  _pathGenerator: {fileID: 0}
+  _pathGenerator: {fileID: 11400000, guid: 52f7c407f5216974e80eef88fe9c9aa4, type: 2}
   _sequenceCollection:
     sequences:
     - enabled: 1
@@ -46,7 +46,7 @@ MonoBehaviour:
         _pool: 0
         _poolParent: {fileID: 0}
       customPathGenerator: {fileID: 0}
-      spawnCount: 1
+      spawnCount: 10
       type: 1
       randomizer: {fileID: 11400000, guid: fb600be43607d7e47822c78754644d57, type: 2}
       customShuffle: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
         _pool: 0
         _poolParent: {fileID: 0}
       customPathGenerator: {fileID: 0}
-      spawnCount: 1
+      spawnCount: 10
       type: 1
       randomizer: {fileID: 11400000, guid: fb600be43607d7e47822c78754644d57, type: 2}
       customShuffle: {fileID: 0}
