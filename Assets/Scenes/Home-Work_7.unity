@@ -156,7 +156,7 @@ MonoBehaviour:
   startDistance: 0
   startMode: 0
   followSpeed: 20
-  follow: 0
+  follow: 1
   isPlayer: 1
   loop: 0
   physicsMode: 0
@@ -363,8 +363,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287483356}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18931805, y: -0, z: -0, w: 0.98191583}
-  m_LocalPosition: {x: 0, y: 1.6399999, z: -4.0200005}
+  m_LocalRotation: {x: 0.07714762, y: -0, z: -0, w: 0.9970197}
+  m_LocalPosition: {x: 0, y: 0.80999994, z: -5.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -458,8 +458,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18931808, y: 0, z: 0, w: 0.98191583}
-  m_LocalPosition: {x: 0, y: 2.1399999, z: 15.98}
+  m_LocalRotation: {x: 0.07714762, y: 0, z: 0, w: 0.9970197}
+  m_LocalPosition: {x: 0, y: 1.31, z: 14.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -616,9 +616,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damping: {x: 0.2, y: 0.5, z: 0.3}
   ShoulderOffset: {x: 0, y: 0, z: 0}
-  VerticalArmLength: 1.64
+  VerticalArmLength: 0.81
   CameraSide: 1
-  CameraDistance: 4.02
+  CameraDistance: 5.01
   CameraCollisionFilter:
     serializedVersion: 2
     m_Bits: 0
