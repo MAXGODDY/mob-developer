@@ -13,9 +13,7 @@ public class CoinGenerator : MonoBehaviour
 
         for (int i = 0; i < coinsToGenerate; i++)
         {
-            int randomIndex = UnityEngine.Random.Range(0, _points.Length);
-            Vector3 spawnPosition = _points[randomIndex].position + position;
-            Instantiate(_coin, spawnPosition, Quaternion.identity);
+            Instantiate(_coin, _points[i]);
         }
 
     }
