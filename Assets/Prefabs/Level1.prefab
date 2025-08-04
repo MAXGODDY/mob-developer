@@ -4136,7 +4136,7 @@ MonoBehaviour:
     min: {x: -75, y: -0.667, z: -25}
     size: {x: 150, y: 11.659916, z: 30}
   builders: []
-  unpacked: 1
+  unpacked: 0
   alwaysDraw: 0
   drawGeneratedSpline: 1
   drawGeneratedSamples: 1
@@ -4144,7 +4144,7 @@ MonoBehaviour:
   drawEntranceAndExit: 1
   drawBounds: 1
   drawCustomPaths: 1
-  editorChildCount: 119
+  editorChildCount: 120
 --- !u!114 &1371548478016350648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4157,7 +4157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f5dbd247a6667041a352db500013401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coin: {fileID: 6954758372675618198, guid: 6a301d09debaf1e4a8d3e2657cc44a96, type: 3}
+  _coin: {fileID: 1423928566906578, guid: 12dd4bed2dc6fe745ab82d7e1a34165d, type: 3}
   _points:
   - {fileID: 5196798609227746974}
   - {fileID: 207647810856944749}
@@ -4168,7 +4168,7 @@ MonoBehaviour:
   - {fileID: 8742235915368855818}
   - {fileID: 4312156930034430509}
   - {fileID: 2339572063621359874}
-  _minCoins: 4
+  _minCoins: 2
 --- !u!1 &1390326444639932931
 GameObject:
   m_ObjectHideFlags: 0

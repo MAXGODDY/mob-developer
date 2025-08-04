@@ -7,9 +7,17 @@ public class CoinGenerator : MonoBehaviour
 
     [SerializeField] private byte _minCoins;
 
-    public void Generate(Vector3 position)
+    private void Start()
     {
-        int coinsToGenerate = UnityEngine.Random.Range(_minCoins, _points.Length + 1);
+        Generate();
+    }
+
+
+
+    public void Generate()
+    {
+        int coinsToGenerate = UnityEngine.Random.Range((int)_minCoins, _points.Length + 1);
+
 
         for (int i = 0; i < coinsToGenerate; i++)
         {

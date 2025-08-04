@@ -1,5 +1,6 @@
 using Controllers.Input;
 using Dreamteck.Forever;
+using TMPro;
 using UnityEngine;
 
 
@@ -11,6 +12,7 @@ namespace Game
         [SerializeField] private Runner _basicRunner;
         [SerializeField] private float _slideSpeed = 5f;
         [SerializeField] private float _joystickSlow = 2f;
+        [SerializeField] TMP_Text _text;
 
         private Vector2 _targetVector;
         private float _addValue;
@@ -21,6 +23,12 @@ namespace Game
             _inputController.SubscribeEvents();
             SubsribeEvents();
         }
+
+        private void Start()
+        {
+            Coin._text = _text;
+        }
+
 
         private void SubsribeEvents()
         {

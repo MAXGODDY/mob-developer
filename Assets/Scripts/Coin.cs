@@ -3,11 +3,13 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    [SerializeField] TMP_Text _text;
+    public static TMP_Text _text;
 
     private static int _score;
 
     private string TagPlayer = "Player";
+
+
 
     private void OnTriggerEnter(Collider other)
     {
