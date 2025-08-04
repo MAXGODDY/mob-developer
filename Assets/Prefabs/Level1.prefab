@@ -4157,7 +4157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f5dbd247a6667041a352db500013401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coin: {fileID: 0}
+  _coin: {fileID: 6954758372675618198, guid: 6a301d09debaf1e4a8d3e2657cc44a96, type: 3}
   _points:
   - {fileID: 5196798609227746974}
   - {fileID: 207647810856944749}
