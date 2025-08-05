@@ -15,9 +15,9 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag(TagPlayer))
         {
+            Destroy(gameObject);
             _score++;
             _text.text = _score.ToString();
-            Destroy(gameObject);
         }
 
     }

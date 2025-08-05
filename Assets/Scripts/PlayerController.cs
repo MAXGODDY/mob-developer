@@ -64,7 +64,7 @@ namespace Game
 
         private void Update()
         {
-            _targetVector = new Vector2(Mathf.Clamp(_targetVector.x + _addValue, -LevelWidth, LevelWidth), 0.5f);
+            _targetVector = new Vector2(Mathf.Clamp(_targetVector.x + _addValue, -LevelWidth, LevelWidth), 0);
             var finaloffset = Vector2.MoveTowards(_basicRunner.motion.offset, _targetVector, _slideSpeed * Time.deltaTime);
             _basicRunner.motion.offset = finaloffset;
         }
