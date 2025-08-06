@@ -11,10 +11,12 @@ namespace Controllers.Input
         public NewControls InputActions => _inputAcions;
 
 
-        private IDisposable _eventListener;
-
         public event Action<Vector2> MovementRecieved;
         public event Action MovementEnd;
+
+        public event Action JumpStarted;
+
+        private IDisposable _eventListener;
 
         public InputController()
         {
@@ -26,10 +28,11 @@ namespace Controllers.Input
         {
             _inputAcions.Default.Movement.performed += OnMovementPerformed;
             _inputAcions.Default.Movement.canceled += OnMovementEnd;
+            _inputAcions.Default.Jump.started += OnJumpStarted;
         }
 
+        private void OnJumpStarted(InputAction.CallbackContext callbackContext) => JumpStarted?.Invoke();
         private void OnMovementPerformed(InputAction.CallbackContext callbackContext) => MovementRecieved?.Invoke(callbackContext.ReadValue<Vector2>());
-
         private void OnMovementEnd(InputAction.CallbackContext callbackContext) => MovementEnd?.Invoke();
 
 

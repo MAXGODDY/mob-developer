@@ -15,9 +15,9 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "ExitButton",
+                    "name": "Jump",
                     "type": "Button",
-                    "id": "c313a206-bde9-4c69-aa01-23381b77235e",
+                    "id": "5e966379-c298-4baa-8ca0-ee73d9197ae3",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -93,23 +93,12 @@
                 },
                 {
                     "name": "",
-                    "id": "ca2011b1-68d5-4eeb-b7ec-050dc3706997",
-                    "path": "<XInputController>/start",
+                    "id": "0732c826-1795-4ed9-88b4-5121e2b8342c",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ExitButton",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d43310ac-148c-4218-9114-932ad4a35187",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ExitButton",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

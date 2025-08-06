@@ -37,9 +37,9 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""ExitButton"",
+                    ""name"": ""Jump"",
                     ""type"": ""Button"",
-                    ""id"": ""c313a206-bde9-4c69-aa01-23381b77235e"",
+                    ""id"": ""5e966379-c298-4baa-8ca0-ee73d9197ae3"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -115,23 +115,12 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""ca2011b1-68d5-4eeb-b7ec-050dc3706997"",
-                    ""path"": ""<XInputController>/start"",
+                    ""id"": ""0732c826-1795-4ed9-88b4-5121e2b8342c"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""ExitButton"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d43310ac-148c-4218-9114-932ad4a35187"",
-                    ""path"": ""<Keyboard>/escape"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""ExitButton"",
+                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -143,7 +132,7 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
         // Default
         m_Default = asset.FindActionMap("Default", throwIfNotFound: true);
         m_Default_Movement = m_Default.FindAction("Movement", throwIfNotFound: true);
-        m_Default_ExitButton = m_Default.FindAction("ExitButton", throwIfNotFound: true);
+        m_Default_Jump = m_Default.FindAction("Jump", throwIfNotFound: true);
     }
 
     ~@NewControls()
@@ -211,13 +200,13 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Default;
     private List<IDefaultActions> m_DefaultActionsCallbackInterfaces = new List<IDefaultActions>();
     private readonly InputAction m_Default_Movement;
-    private readonly InputAction m_Default_ExitButton;
+    private readonly InputAction m_Default_Jump;
     public struct DefaultActions
     {
         private @NewControls m_Wrapper;
         public DefaultActions(@NewControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Default_Movement;
-        public InputAction @ExitButton => m_Wrapper.m_Default_ExitButton;
+        public InputAction @Jump => m_Wrapper.m_Default_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Default; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -230,9 +219,9 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
             @Movement.started += instance.OnMovement;
             @Movement.performed += instance.OnMovement;
             @Movement.canceled += instance.OnMovement;
-            @ExitButton.started += instance.OnExitButton;
-            @ExitButton.performed += instance.OnExitButton;
-            @ExitButton.canceled += instance.OnExitButton;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
         }
 
         private void UnregisterCallbacks(IDefaultActions instance)
@@ -240,9 +229,9 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
             @Movement.started -= instance.OnMovement;
             @Movement.performed -= instance.OnMovement;
             @Movement.canceled -= instance.OnMovement;
-            @ExitButton.started -= instance.OnExitButton;
-            @ExitButton.performed -= instance.OnExitButton;
-            @ExitButton.canceled -= instance.OnExitButton;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
         }
 
         public void RemoveCallbacks(IDefaultActions instance)
@@ -263,6 +252,6 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
     public interface IDefaultActions
     {
         void OnMovement(InputAction.CallbackContext context);
-        void OnExitButton(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
     }
 }

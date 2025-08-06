@@ -12,15 +12,22 @@ namespace Game
         [SerializeField] private Runner _basicRunner;
         [SerializeField] private float _slideSpeed = 5f;
         [SerializeField] private float _joystickSlow = 2f;
+        [SerializeField] private Animator _animator;
         [SerializeField] TMP_Text _text;
 
+        private const string RunningBool = "IsRunning";
+        private const string JumpingTrigger = "IsJumping";
+
         private Vector2 _targetVector;
+
         private float _addValue;
         private const int LevelWidth = 5;
+
         private void Awake()
         {
             _inputController = new();
             _inputController.SubscribeEvents();
+            _animator.SetBool(RunningBool, true);
             SubsribeEvents();
         }
 
@@ -34,12 +41,19 @@ namespace Game
         {
             _inputController.MovementRecieved += OnMovementRecieved;
             _inputController.MovementEnd += OnMovementEndd;
+            _inputController.JumpStarted += OnJumpPressed;
         }
 
         private void UnsudscribeEvents()
         {
             _inputController.MovementRecieved -= OnMovementRecieved;
             _inputController.MovementEnd -= OnMovementEndd;
+            _inputController.JumpStarted -= OnJumpPressed;
+        }
+
+        private void OnJumpPressed()
+        {
+            _animator.SetTrigger(JumpingTrigger);
         }
 
         private void OnMovementRecieved(Vector2 movement)
