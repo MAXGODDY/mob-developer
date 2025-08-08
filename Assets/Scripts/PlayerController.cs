@@ -12,7 +12,7 @@ namespace Game
         [SerializeField] private Runner _basicRunner;
         [SerializeField] private float _slideSpeed = 5f;
         [SerializeField] private float _joystickSlow = 2f;
-        [SerializeField] private Animator _animator;
+        [SerializeField] Animator _animator;
         [SerializeField] TMP_Text _text;
 
         private const string RunningBool = "IsRunning";
@@ -34,6 +34,7 @@ namespace Game
         private void Start()
         {
             Coin._text = _text;
+            DamageOnCollision._animator = _animator;
         }
 
 
@@ -78,7 +79,7 @@ namespace Game
 
         private void Update()
         {
-            _targetVector = new Vector2(Mathf.Clamp(_targetVector.x + _addValue, -LevelWidth, LevelWidth), 0);
+            _targetVector = new Vector2(Mathf.Clamp(_targetVector.x + _addValue, -LevelWidth, LevelWidth), 0.4f);
             var finaloffset = Vector2.MoveTowards(_basicRunner.motion.offset, _targetVector, _slideSpeed * Time.deltaTime);
             _basicRunner.motion.offset = finaloffset;
         }

@@ -4757,13 +4757,13 @@ MonoBehaviour:
     colliders: []
     _isRoot: 0
   bounds:
-    center: {x: 0, y: 2.0455208, z: -10}
-    extents: {x: 75, y: 2.4535217, z: 15}
-    max: {x: 75, y: 4.4990425, z: 5}
-    min: {x: -75, y: -0.40800077, z: -25}
-    size: {x: 150, y: 4.9070435, z: 30}
+    center: {x: 0, y: 2.0455205, z: -10}
+    extents: {x: 75, y: 2.4535205, z: 15}
+    max: {x: 75, y: 4.499041, z: 5}
+    min: {x: -75, y: -0.408, z: -25}
+    size: {x: 150, y: 4.907041, z: 30}
   builders: []
-  unpacked: 1
+  unpacked: 0
   alwaysDraw: 0
   drawGeneratedSpline: 1
   drawGeneratedSamples: 1
@@ -4771,7 +4771,7 @@ MonoBehaviour:
   drawEntranceAndExit: 1
   drawBounds: 1
   drawCustomPaths: 1
-  editorChildCount: 117
+  editorChildCount: 118
 --- !u!114 &5590323159826956183
 MonoBehaviour:
   m_ObjectHideFlags: 0

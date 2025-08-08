@@ -7,7 +7,7 @@ public class Coin : MonoBehaviour
 
     private static int _score;
 
-    private string TagPlayer = "Player";
+    private string TagPlayer = "CoinTrigger";
 
 
 
@@ -15,10 +15,9 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag(TagPlayer))
         {
-            Destroy(gameObject);
             _score++;
             _text.text = _score.ToString();
+            Destroy(gameObject);
         }
-
     }
 }

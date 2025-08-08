@@ -41,6 +41,7 @@ namespace Controllers.Input
         {
             _inputAcions.Default.Movement.performed -= OnMovementPerformed;
             _inputAcions.Default.Movement.canceled -= OnMovementEnd;
+            _inputAcions.Default.Jump.started -= OnJumpStarted;
         }
     }
 }
