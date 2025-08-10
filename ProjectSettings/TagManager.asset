@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - CoinTrigger
+  - Trees
   layers:
   - Default
   - TransparentFX

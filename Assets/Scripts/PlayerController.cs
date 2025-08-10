@@ -15,6 +15,10 @@ namespace Game
         [SerializeField] Animator _animator;
         [SerializeField] TMP_Text _text;
 
+        private const string PlayerTag = "Player";
+        private const string DeathTrigger = "IsDeath";
+        private const string DamageOnCollisionTag = "Trees";
+
         private const string RunningBool = "IsRunning";
         private const string JumpingTrigger = "IsJumping";
 
@@ -35,6 +39,7 @@ namespace Game
         {
             Coin._text = _text;
             DamageOnCollision._animator = _animator;
+            DamageOnCollision._basicRunner = _basicRunner;
         }
 
 
