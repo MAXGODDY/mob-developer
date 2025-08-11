@@ -1223,11 +1223,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf506ff3ebea0dd4cae825deaaf1f2c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _canvas: {fileID: 933965999}
   _loadingScreen: {fileID: 933966000}
   _player: {fileID: 2049143105}
   _runner: {fileID: 2049143112}
   _fadeOutDuration: 1
   _targetAlpha: 0
+  _animator: {fileID: 2049143110}
 --- !u!1 &1112297392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,6 +1931,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6692784093168006281, guid: 39c2ec1a389b5044eab637b13366d5af, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2049143114}
+    - targetCorrespondingSourceObject: {fileID: 6692784093168006281, guid: 39c2ec1a389b5044eab637b13366d5af, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2049143116}
     - targetCorrespondingSourceObject: {fileID: 2759628601067974536, guid: 39c2ec1a389b5044eab637b13366d5af, type: 3}
       insertIndex: -1
       addedObject: {fileID: 460342245}
@@ -2090,6 +2095,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &2049143116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049143105}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ad749a278f10a4b8b2a2282541a821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerRunner: {fileID: 2049143112}
+  _animator: {fileID: 2049143110}
 --- !u!1 &2078275816 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 549916157381641974, guid: 39c2ec1a389b5044eab637b13366d5af, type: 3}
