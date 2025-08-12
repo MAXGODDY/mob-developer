@@ -15,6 +15,8 @@ namespace Controllers.Input
         public event Action MovementEnd;
 
         public event Action JumpStarted;
+        public event Action Started;
+
 
         private IDisposable _eventListener;
 
@@ -29,8 +31,11 @@ namespace Controllers.Input
             _inputAcions.Default.Movement.performed += OnMovementPerformed;
             _inputAcions.Default.Movement.canceled += OnMovementEnd;
             _inputAcions.Default.Jump.started += OnJumpStarted;
+            _inputAcions.Default.Start.started += OnStarted;
         }
 
+
+        private void OnStarted(InputAction.CallbackContext callbackContext) => Started?.Invoke();
         private void OnJumpStarted(InputAction.CallbackContext callbackContext) => JumpStarted?.Invoke();
         private void OnMovementPerformed(InputAction.CallbackContext callbackContext) => MovementRecieved?.Invoke(callbackContext.ReadValue<Vector2>());
         private void OnMovementEnd(InputAction.CallbackContext callbackContext) => MovementEnd?.Invoke();
@@ -42,6 +47,7 @@ namespace Controllers.Input
             _inputAcions.Default.Movement.performed -= OnMovementPerformed;
             _inputAcions.Default.Movement.canceled -= OnMovementEnd;
             _inputAcions.Default.Jump.started -= OnJumpStarted;
+            _inputAcions.Default.Start.started -= OnStarted;
         }
     }
 }

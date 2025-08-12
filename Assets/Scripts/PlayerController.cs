@@ -2,6 +2,7 @@ using Controllers.Input;
 using Dreamteck.Forever;
 using TMPro;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 
 namespace Game
@@ -14,6 +15,7 @@ namespace Game
         [SerializeField] private float _joystickSlow = 2f;
         [SerializeField] Animator _animator;
         [SerializeField] TMP_Text _text;
+        [SerializeField] private GameObject _lobiCanvas;
 
         private const string PlayerTag = "Player";
         private const string DeathTrigger = "IsDeath";
@@ -26,6 +28,12 @@ namespace Game
 
         private float _addValue;
         private const int LevelWidth = 5;
+
+        public void HandleDeath()
+        { 
+            
+        }
+
 
         private void Awake()
         {
@@ -48,6 +56,7 @@ namespace Game
             _inputController.MovementRecieved += OnMovementRecieved;
             _inputController.MovementEnd += OnMovementEndd;
             _inputController.JumpStarted += OnJumpPressed;
+            _inputController.Started += OnStarted;
         }
 
         private void UnsudscribeEvents()
@@ -55,6 +64,13 @@ namespace Game
             _inputController.MovementRecieved -= OnMovementRecieved;
             _inputController.MovementEnd -= OnMovementEndd;
             _inputController.JumpStarted -= OnJumpPressed;
+            _inputController.Started -= OnStarted;
+        }
+
+        private void OnStarted()
+        {
+            StartLobiControler script = _lobiCanvas.GetComponent<StartLobiControler>();
+            script.StartGame();
         }
 
         private void OnJumpPressed()
@@ -67,19 +83,12 @@ namespace Game
             Debug.Log($"Player movement received: {movement}");
             _addValue = movement.x / _joystickSlow;
             _targetVector = new Vector2(Mathf.Clamp(_targetVector.x + _addValue, -LevelWidth, LevelWidth), 0);
-
-            UpdateMovement();
         }
 
         private void OnMovementEndd()
         {
             _targetVector = _basicRunner.motion.offset;
             _addValue = 0;
-        }
-
-        private void UpdateMovement()
-        {
-            //_basicRunner.motion.offset = new Vector2(_targetX, _basicRunner.motion.offset.y);
         }
 
         private void Update()

@@ -1,9 +1,7 @@
 using Dreamteck.Forever;
 using Game;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class LoadingScreenController : MonoBehaviour
 {
@@ -16,23 +14,32 @@ public class LoadingScreenController : MonoBehaviour
     [Range(0f, 1f)]
     [SerializeField] private float _targetAlpha = 0f;
     [SerializeField] Animator _animator;
+    [SerializeField] private GameObject _lobiCanvas;
+
 
     private const string IdelBool = "Idel";
     private const string RunningBool = "IsRunning";
 
-    float _playerpositionZ = 20;
+    public float _playerpositionZ = 20;
+    int _index = 0;
 
     private void Start()
     {
-        StartCoroutine(FadeOut(_fadeOutDuration, _targetAlpha, _loadingScreen));
         
-}
+        
+    }
 
     private void Update()
     {
-        if (_player.transform.position.z > 20)
+        if (_player.transform.position.z > _playerpositionZ)
         {
             _runner.followSpeed = 0;
+            _index++;
+            if (_index == 1)
+            {
+                StartCoroutine(FadeOut(_fadeOutDuration, _targetAlpha, _loadingScreen));
+            }
+            
         }
     }
 
@@ -40,7 +47,7 @@ public class LoadingScreenController : MonoBehaviour
 
     private IEnumerator FadeOut(float duration, float targetAlpha, CanvasGroup loading)
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
 
         float currentTime = 0f;
         float startAlpha = loading.alpha;
@@ -58,6 +65,7 @@ public class LoadingScreenController : MonoBehaviour
             _animator.SetBool(RunningBool, false);
             _animator.SetTrigger(IdelBool);
             _canvas.SetActive(false); // отключает объект и все его компоненты
+            _lobiCanvas.SetActive(true);
 
 
 
