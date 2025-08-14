@@ -5,19 +5,18 @@ using UnityEngine;
 
 public class DamageOnCollision : MonoBehaviour
 {
-    private const string DamageOnCollisionTag = "Trees";
     
-
-
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.tag == DamageOnCollisionTag)
+        if (collision.gameObject.CompareTag(PlayerController.TagPlayer))
         {
-            collision.collider.GetComponentInParent<PlayerController>()?.HandleDeath();
-            Debug.Log($"Collision with {collision.collider.gameObject.tag} detected.");
 
+
+
+             var player = collision.collider.GetComponent<PlayerController>();
+             Debug.Log($"Collision with {collision.collider.gameObject.tag} detected.");
         }
-
+        Debug.Log(collision.gameObject.name+"name"+ collision.gameObject.tag+ "tag");
     }
     
 

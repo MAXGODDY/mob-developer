@@ -3392,7 +3392,7 @@ MonoBehaviour:
     min: {x: -75, y: -0.5674825, z: -25}
     size: {x: 150, y: 5.427155, z: 30}
   builders: []
-  unpacked: 1
+  unpacked: 0
   alwaysDraw: 0
   drawGeneratedSpline: 1
   drawGeneratedSamples: 1
@@ -3400,7 +3400,7 @@ MonoBehaviour:
   drawEntranceAndExit: 1
   drawBounds: 1
   drawCustomPaths: 1
-  editorChildCount: 103
+  editorChildCount: 104
 --- !u!114 &8808959040608965844
 MonoBehaviour:
   m_ObjectHideFlags: 0

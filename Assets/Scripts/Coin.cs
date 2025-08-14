@@ -7,7 +7,7 @@ public class Coin : MonoBehaviour
 
     private static int _score;
 
-    private string TagPlayer = "CoinTrigger";
+    private string TagPlayer = "Player";
 
 
 

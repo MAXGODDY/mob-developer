@@ -17,6 +17,9 @@ namespace Game
 
         [SerializeField] private float _hp = 1f;
 
+        public const string TagPlayer = "Player";
+        public const string DamageOnCollisionTag = "Trees";
+
 
         private const string RunningBool = "IsRunning";
         private const string JumpingTrigger = "IsJumping";
