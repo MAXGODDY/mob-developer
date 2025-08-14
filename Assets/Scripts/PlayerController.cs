@@ -15,12 +15,12 @@ namespace Game
         [SerializeField] Animator _animator;
         [SerializeField] TMP_Text _text;
 
-        private const string PlayerTag = "Player";
-        private const string DeathTrigger = "IsDeath";
-        private const string DamageOnCollisionTag = "Trees";
+        [SerializeField] private float _hp = 1f;
+
 
         private const string RunningBool = "IsRunning";
         private const string JumpingTrigger = "IsJumping";
+        private const string DeathTrigger = "IsDeath";
 
         private Vector2 _targetVector;
 
@@ -38,9 +38,9 @@ namespace Game
         private void Start()
         {
             Coin._text = _text;
-            DamageOnCollision._animator = _animator;
-            DamageOnCollision._basicRunner = _basicRunner;
         }
+
+
 
 
         private void SubsribeEvents()
@@ -57,6 +57,14 @@ namespace Game
             _inputController.JumpStarted -= OnJumpPressed;
         }
 
+        public void HandleDeath()
+        {
+            _animator.SetTrigger(DeathTrigger);
+            _hp--;
+            _basicRunner.followSpeed = 0;
+            Debug.Log("10");
+        }
+
         private void OnJumpPressed()
         {
             _animator.SetTrigger(JumpingTrigger);
@@ -67,19 +75,12 @@ namespace Game
             Debug.Log($"Player movement received: {movement}");
             _addValue = movement.x / _joystickSlow;
             _targetVector = new Vector2(Mathf.Clamp(_targetVector.x + _addValue, -LevelWidth, LevelWidth), 0);
-
-            UpdateMovement();
         }
 
         private void OnMovementEndd()
         {
             _targetVector = _basicRunner.motion.offset;
             _addValue = 0;
-        }
-
-        private void UpdateMovement()
-        {
-            //_basicRunner.motion.offset = new Vector2(_targetX, _basicRunner.motion.offset.y);
         }
 
         private void Update()
