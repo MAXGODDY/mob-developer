@@ -75,7 +75,7 @@ namespace Game
 
         private void OnMovementRecieved(Vector2 movement)
         {
-            Debug.Log($"Player movement received: {movement}");
+           //Debug.Log($"Player movement received: {movement}");
             _addValue = movement.x / _joystickSlow;
             _targetVector = new Vector2(Mathf.Clamp(_targetVector.x + _addValue, -LevelWidth, LevelWidth), 0);
         }
