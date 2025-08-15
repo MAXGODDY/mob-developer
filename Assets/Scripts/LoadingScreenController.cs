@@ -17,17 +17,12 @@ public class LoadingScreenController : MonoBehaviour
     [SerializeField] private GameObject _lobiCanvas;
 
 
-    private const string IdelBool = "Idel";
+
     private const string RunningBool = "IsRunning";
 
     public float _playerpositionZ = 20;
     int _index = 0;
 
-    private void Start()
-    {
-        
-        
-    }
 
     private void Update()
     {
@@ -62,8 +57,6 @@ public class LoadingScreenController : MonoBehaviour
             _canvas.SetActive(false); // отключает объект и все его компоненты
             MonoBehaviour script = _player.GetComponent(typeof(PlayerController)) as MonoBehaviour;
             script.enabled = false;
-            _animator.SetBool(RunningBool, false);
-            _animator.SetTrigger(IdelBool);
             _canvas.SetActive(false); // отключает объект и все его компоненты
             _lobiCanvas.SetActive(true);
 

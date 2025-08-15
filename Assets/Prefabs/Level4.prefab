@@ -3392,7 +3392,7 @@ MonoBehaviour:
     min: {x: -75, y: -0.56748235, z: -25}
     size: {x: 150, y: 5.427155, z: 30}
   builders: []
-  unpacked: 0
+  unpacked: 1
   alwaysDraw: 0
   drawGeneratedSpline: 1
   drawGeneratedSamples: 1
@@ -3400,7 +3400,7 @@ MonoBehaviour:
   drawEntranceAndExit: 1
   drawBounds: 1
   drawCustomPaths: 1
-  editorChildCount: 104
+  editorChildCount: 103
 --- !u!114 &8808959040608965844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8863,6 +8863,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1542802950924766, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3180394012335573256}
+    - targetCorrespondingSourceObject: {fileID: 1542802950924766, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8973654884869385859}
   m_SourcePrefab: {fileID: 100100000, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
 --- !u!64 &6919259690348164752 stripped
 MeshCollider:
@@ -8927,6 +8930,19 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &8973654884869385859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6982535277746754724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085a6b8bd1b5ada4e8c6273c64b39093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hp: 1
 --- !u!4 &6986086710054237840 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4531248793881578, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}

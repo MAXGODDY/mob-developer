@@ -16,13 +16,14 @@ namespace Game
         [SerializeField] Animator _animator;
         [SerializeField] TMP_Text _text;
         [SerializeField] private GameObject _lobiCanvas;
+        [SerializeField] private float _hp = 1f;
 
-        private const string PlayerTag = "Player";
+        public const string PlayerTag = "Player";
         private const string DeathTrigger = "IsDeath";
-        private const string DamageOnCollisionTag = "Trees";
 
         private const string RunningBool = "IsRunning";
         private const string JumpingTrigger = "IsJumping";
+        private const string idelBool = "idel";
 
         private Vector2 _targetVector;
 
@@ -30,8 +31,25 @@ namespace Game
         private const int LevelWidth = 5;
 
         public void HandleDeath()
-        { 
-            
+        {
+            _animator.SetTrigger(DeathTrigger);
+            _hp--;
+            _basicRunner.followSpeed = 0;
+            Debug.Log("10");
+        }
+
+        public void SwitchAnimation()
+        {
+            if (_basicRunner.followSpeed == 20)
+            {
+                _animator.SetBool(RunningBool, true);
+                _animator.SetBool(idelBool, false);
+            }
+            else
+            {
+                _animator.SetBool(RunningBool, false);
+                _animator.SetBool(idelBool, true);
+            }
         }
 
 
@@ -46,8 +64,6 @@ namespace Game
         private void Start()
         {
             Coin._text = _text;
-            DamageOnCollision._animator = _animator;
-            DamageOnCollision._basicRunner = _basicRunner;
         }
 
 
