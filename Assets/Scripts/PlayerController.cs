@@ -10,13 +10,14 @@ namespace Game
     public class PlayerController : MonoBehaviour
     {
         private InputController _inputController;
-        [SerializeField] private Runner _basicRunner;
+        [SerializeField] public Runner _basicRunner;
         [SerializeField] private float _slideSpeed = 5f;
         [SerializeField] private float _joystickSlow = 2f;
         [SerializeField] Animator _animator;
         [SerializeField] TMP_Text _text;
         [SerializeField] private GameObject _lobiCanvas;
         [SerializeField] private float _hp = 1f;
+        [SerializeField] public GameObject _player;
 
         public const string PlayerTag = "Player";
         private const string DeathTrigger = "IsDeath";
@@ -29,6 +30,7 @@ namespace Game
 
         private float _addValue;
         private const int LevelWidth = 5;
+        public float _playerpositionZ = 20;
 
         public void HandleDeath()
         {

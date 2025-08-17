@@ -221,7 +221,7 @@ RectTransform:
   m_GameObject: {fileID: 167312451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 19.2, y: 9.31, z: 1}
+  m_LocalScale: {x: 19.2, y: 9.4561, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 933966004}
@@ -1199,7 +1199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!225 &933966000
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1310,13 +1310,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvas: {fileID: 933965999}
   _loadingScreen: {fileID: 933966000}
-  _player: {fileID: 2049143105}
-  _runner: {fileID: 2049143112}
   _fadeOutDuration: 1
   _targetAlpha: 0
-  _animator: {fileID: 2049143110}
   _lobiCanvas: {fileID: 1255768954}
   _playerpositionZ: 25
+  PlayerController: {fileID: 2049143107}
 --- !u!1 &1112297392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,7 +1333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1112297393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1551,7 +1549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1255768955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2319,6 +2317,8 @@ MonoBehaviour:
   _text: {fileID: 1691484944}
   _lobiCanvas: {fileID: 1255768954}
   _hp: 1
+  _player: {fileID: 0}
+  _playerpositionZ: 20
 --- !u!95 &2049143110 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6100055482358212821, guid: 39c2ec1a389b5044eab637b13366d5af, type: 3}

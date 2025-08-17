@@ -7,42 +7,40 @@ public class LoadingScreenController : MonoBehaviour
 {
     [SerializeField] private GameObject _canvas;
     [SerializeField] private CanvasGroup _loadingScreen;
-    [SerializeField] private GameObject _player;
-    [SerializeField] private Runner _runner;
     [Header("Coroutione")]
     [SerializeField] private float _fadeOutDuration = 1f;
     [Range(0f, 1f)]
     [SerializeField] private float _targetAlpha = 0f;
-    [SerializeField] Animator _animator;
     [SerializeField] private GameObject _lobiCanvas;
 
 
 
-    private const string RunningBool = "IsRunning";
 
     public float _playerpositionZ = 20;
-    int _index = 0;
 
+    public PlayerController PlayerController;
 
     private void Update()
     {
-        if (_player.transform.position.z > _playerpositionZ)
+        if (PlayerController._player.transform.position.z > _playerpositionZ)
         {
-            _runner.followSpeed = 0;
-            _index++;
-            if (_index == 1)
-            {
-                StartCoroutine(FadeOut(_fadeOutDuration, _targetAlpha, _loadingScreen));
-            }
-            
+            PlayerController._basicRunner.followSpeed = 0;  
+            Debug.Log("Player reached the target position, stopping the runner.");
         }
     }
+
+    private void Start()
+    {
+        StartCoroutine(FadeOut(_fadeOutDuration, _targetAlpha, _loadingScreen));
+    }
+
+
 
 
 
     private IEnumerator FadeOut(float duration, float targetAlpha, CanvasGroup loading)
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
 
         float currentTime = 0f;
         float startAlpha = loading.alpha;
@@ -54,16 +52,10 @@ public class LoadingScreenController : MonoBehaviour
             float alpha = Mathf.Lerp(startAlpha, targetAlpha, currentTime / duration);
             loading.alpha = alpha;
             yield return null;
-            _canvas.SetActive(false); // отключает объект и все его компоненты
-            MonoBehaviour script = _player.GetComponent(typeof(PlayerController)) as MonoBehaviour;
-            script.enabled = false;
-            _canvas.SetActive(false); // отключает объект и все его компоненты
-            _lobiCanvas.SetActive(true);
-
-
-
         }
+        _canvas.SetActive(false); // отключает объект и все его компоненты
+        _lobiCanvas.SetActive(true);
+        PlayerController.SwitchAnimation();
+
     }
-
-
 }
