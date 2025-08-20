@@ -1,23 +1,19 @@
+using Game;
 using TMPro;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public static TMP_Text _text;
-
-    private static int _score;
-
-    private string TagPlayer = "CoinTrigger";
-
-
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(TagPlayer))
+        Debug.Log($"Coin collided with: {other.gameObject.tag} {PlayerController.PlayerTag}");
+        if (other.gameObject.CompareTag(PlayerController.PlayerTag))
         {
-            _score++;
-            _text.text = _score.ToString();
+            SingletonScoreManager._score++;
+            SingletonScoreManager._text.text = SingletonScoreManager._score.ToString();
             Destroy(gameObject);
+            Debug.Log($"Coin collected! New score: {SingletonScoreManager._score}");
         }
     }
 }

@@ -22,9 +22,10 @@ public class LoadingScreenController : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerController._player.transform.position.z > _playerpositionZ)
+        if (PlayerController._player.transform.position.z == _playerpositionZ)
         {
-            PlayerController._basicRunner.followSpeed = 0;  
+            PlayerController._basicRunner.followSpeed = 0;
+            
             Debug.Log("Player reached the target position, stopping the runner.");
         }
     }
@@ -51,11 +52,16 @@ public class LoadingScreenController : MonoBehaviour
             currentTime += Time.deltaTime;
             float alpha = Mathf.Lerp(startAlpha, targetAlpha, currentTime / duration);
             loading.alpha = alpha;
+            if (PlayerController._player.transform.position.z > _playerpositionZ)
+            {
+                PlayerController._basicRunner.followSpeed = 0;
+                PlayerController.SwitchAnimation();
+            }
             yield return null;
+
         }
         _canvas.SetActive(false); // отключает объект и все его компоненты
         _lobiCanvas.SetActive(true);
-        PlayerController.SwitchAnimation();
 
     }
 }

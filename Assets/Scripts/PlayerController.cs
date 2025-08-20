@@ -14,7 +14,6 @@ namespace Game
         [SerializeField] private float _slideSpeed = 5f;
         [SerializeField] private float _joystickSlow = 2f;
         [SerializeField] Animator _animator;
-        [SerializeField] TMP_Text _text;
         [SerializeField] private GameObject _lobiCanvas;
         [SerializeField] private float _hp = 1f;
         [SerializeField] public GameObject _player;
@@ -37,7 +36,6 @@ namespace Game
             _animator.SetTrigger(DeathTrigger);
             _hp--;
             _basicRunner.followSpeed = 0;
-            Debug.Log("10");
         }
 
         public void SwitchAnimation()
@@ -63,10 +61,6 @@ namespace Game
             SubsribeEvents();
         }
 
-        private void Start()
-        {
-            Coin._text = _text;
-        }
 
 
         private void SubsribeEvents()

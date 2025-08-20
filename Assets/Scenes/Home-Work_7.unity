@@ -221,7 +221,7 @@ RectTransform:
   m_GameObject: {fileID: 167312451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 19.2, y: 9.4561, z: 1}
+  m_LocalScale: {x: 19.2, y: 10.89, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 933966004}
@@ -1647,11 +1647,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainCanvas: {fileID: 1112297392}
   _lobiCanvas: {fileID: 1255768954}
-  _player: {fileID: 2049143105}
-  _runner: {fileID: 2049143112}
-  _animator: {fileID: 2049143110}
   _mainCamera: {fileID: 218953945}
   _lobiCamera: {fileID: 1304806959}
+  _playerController: {fileID: 2049143107}
 --- !u!1 &1304806958
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,7 +2231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6692784093168006281, guid: 39c2ec1a389b5044eab637b13366d5af, type: 3}
       propertyPath: m_TagString
-      value: CoinTrigger
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7145624072224682481, guid: 39c2ec1a389b5044eab637b13366d5af, type: 3}
       propertyPath: m_TagString
@@ -2314,10 +2312,9 @@ MonoBehaviour:
   _slideSpeed: 5
   _joystickSlow: 2
   _animator: {fileID: 2049143110}
-  _text: {fileID: 1691484944}
   _lobiCanvas: {fileID: 1255768954}
   _hp: 1
-  _player: {fileID: 0}
+  _player: {fileID: 2049143105}
   _playerpositionZ: 20
 --- !u!95 &2049143110 stripped
 Animator:
