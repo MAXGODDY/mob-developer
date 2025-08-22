@@ -14,11 +14,6 @@ public class StartLobiControler : MonoBehaviour
     [SerializeField] private PlayerController _playerController;
 
 
-    private const string IdelBool = "idel";
-    private const string RunningBool = "IsRunning";
-
-
-
     public void StartGame()
     {
         _lobiCanvas.SetActive(false);

@@ -59,8 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54854582858534763}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005587924, y: -0.00000023096803, z: -0.00000042468307,
-    w: 1}
+  m_LocalRotation: {x: 0.00000005587924, y: -0.00000023096803, z: -0.00000042468307, w: 1}
   m_LocalPosition: {x: 0.00000015258789, y: 0.23471698, z: -0.000000019073486}
   m_LocalScale: {x: 1, y: 1.0000002, z: 1}
   m_ConstrainProportionsScale: 0
@@ -154,8 +153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258686758336139045}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000011175852, y: 0.00000005587935, z: 0.0000003576278,
-    w: 1}
+  m_LocalRotation: {x: 0.000000011175852, y: 0.00000005587935, z: 0.0000003576278, w: 1}
   m_LocalPosition: {x: 0.000000057220458, y: 0.25258636, z: -0.000000014305114}
   m_LocalScale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -242,6 +240,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -526,6 +527,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -842,6 +846,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1101,8 +1108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350865640903640890}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0000000055879346, y: -0.00000023888427, z: -4.656627e-10,
-    w: 1}
+  m_LocalRotation: {x: -0.0000000055879346, y: -0.00000023888427, z: -4.656627e-10, w: 1}
   m_LocalPosition: {x: -0.000000007152557, y: 0.18558714, z: -0.000000005960464}
   m_LocalScale: {x: 0.99999994, y: 1.0000001, z: 0.9999999}
   m_ConstrainProportionsScale: 0
@@ -1133,8 +1139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353749373581379732}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000018998978, y: 0.00000007450586, z: 0.00000030547375,
-    w: 1}
+  m_LocalRotation: {x: 0.00000018998978, y: 0.00000007450586, z: 0.00000030547375, w: 1}
   m_LocalPosition: {x: -0.00000016212464, y: 0.27573803, z: 0.000000019073486}
   m_LocalScale: {x: 1.0000001, y: 1, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -1197,8 +1202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376103028584273869}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005960465, y: -0.000000050291426, z: -0.000000057742007,
-    w: 1}
+  m_LocalRotation: {x: 0.00000005960465, y: -0.000000050291426, z: -0.000000057742007, w: 1}
   m_LocalPosition: {x: -0.00000019550323, y: 0.30345792, z: -0.000000076293944}
   m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -1293,8 +1297,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454323043705594944}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000033527613, y: 0.000000022351603, z: -0.0000004023313,
-    w: 1}
+  m_LocalRotation: {x: 0.00000033527613, y: 0.000000022351603, z: -0.0000004023313, w: 1}
   m_LocalPosition: {x: -0.000000104904174, y: 0.20797709, z: 0.000000057220458}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1325,8 +1328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465170516346372805}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000003236344, y: 0.000000058324076, z: 0.000000006053595,
-    w: 1}
+  m_LocalRotation: {x: 0.00000003236344, y: 0.000000058324076, z: 0.000000006053595, w: 1}
   m_LocalPosition: {x: 0.0000000011920929, y: 0.00000008771196, z: -0.000000011473894}
   m_LocalScale: {x: 1, y: 1.0000006, z: 1.0000002}
   m_ConstrainProportionsScale: 0
@@ -1424,6 +1426,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1558,8 +1563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578930900832299272}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000046938658, y: 0.000000029103632, z: -0.0000004246831,
-    w: 1}
+  m_LocalRotation: {x: 0.00000046938658, y: 0.000000029103632, z: -0.0000004246831, w: 1}
   m_LocalPosition: {x: -0.00000015497207, y: 0.073831595, z: 0.000000333786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1647,6 +1651,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1931,6 +1938,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2278,6 +2288,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2594,6 +2607,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2885,8 +2901,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838913085383307865}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000000782311, y: -0.000000007450581, z: 0.0000000037252907,
-    w: 1}
+  m_LocalRotation: {x: 0.0000000782311, y: -0.000000007450581, z: 0.0000000037252907, w: 1}
   m_LocalPosition: {x: 0.000000023841856, y: 0.21301843, z: 0.000000019073486}
   m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2917,8 +2932,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852560266986998005}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000044703467, y: -0.0000001066366, z: -0.00000040023576,
-    w: 1}
+  m_LocalRotation: {x: 0.00000044703467, y: -0.0000001066366, z: -0.00000040023576, w: 1}
   m_LocalPosition: {x: 0.00000012516975, y: 0.18444374, z: -0.000000114440915}
   m_LocalScale: {x: 1.0000001, y: 1.0000002, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2974,6 +2988,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3258,6 +3275,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3517,8 +3537,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932974481788365866}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000063702464, y: -0.000000029801942, z: 0.00000059232116,
-    w: 1}
+  m_LocalRotation: {x: 0.00000063702464, y: -0.000000029801942, z: 0.00000059232116, w: 1}
   m_LocalPosition: {x: -0.00000015258789, y: 0.15417269, z: 0.000000114440915}
   m_LocalScale: {x: 1.0000001, y: 1, z: 0.9999998}
   m_ConstrainProportionsScale: 0
@@ -3549,8 +3568,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943800209346940990}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000052154043, y: 0.00000026728955, z: 0.000000109430374,
-    w: 1}
+  m_LocalRotation: {x: 0.000000052154043, y: 0.00000026728955, z: 0.000000109430374, w: 1}
   m_LocalPosition: {x: -0.0000001168251, y: 0.3034576, z: 0.000000019073486}
   m_LocalScale: {x: 1.0000001, y: 0.9999999, z: 0.9999999}
   m_ConstrainProportionsScale: 0
@@ -3670,6 +3688,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3954,6 +3975,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4213,8 +4237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040547579975250315}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000026449555, y: 0.000000115484056, z: 0.00000021606681,
-    w: 1}
+  m_LocalRotation: {x: 0.00000026449555, y: 0.000000115484056, z: 0.00000021606681, w: 1}
   m_LocalPosition: {x: 0.00000022888183, y: 0.29797158, z: 0.000000057220458}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4245,8 +4268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052945271119238356}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000030919904, y: -0.00000009313239, z: -0.00000040233135,
-    w: 1}
+  m_LocalRotation: {x: 0.00000030919904, y: -0.00000009313239, z: -0.00000040233135, w: 1}
   m_LocalPosition: {x: 0.000000019073486, y: 0.29750815, z: 0}
   m_LocalScale: {x: 0.99999994, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -4471,8 +4493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278198239010740573}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000081956394, y: 0.000000014901123, z: -0.00000046938658,
-    w: 1}
+  m_LocalRotation: {x: 0.000000081956394, y: 0.000000014901123, z: -0.00000046938658, w: 1}
   m_LocalPosition: {x: 0.00000012397766, y: 0.31336084, z: 0}
   m_LocalScale: {x: 1, y: 0.9999999, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -4663,8 +4684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535308353904455018}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000031478706, y: 0.000000055879333, z: 0.00000009499494,
-    w: 1}
+  m_LocalRotation: {x: -0.00000031478706, y: 0.000000055879333, z: 0.00000009499494, w: 1}
   m_LocalPosition: {x: -0.000000009536743, y: 0.30651966, z: 0.00000007867813}
   m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4821,8 +4841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691209278389323537}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0000021308658, y: -0.0000002719494, z: 0.0000015127001,
-    w: 1}
+  m_LocalRotation: {x: -0.0000021308658, y: -0.0000002719494, z: 0.0000015127001, w: 1}
   m_LocalPosition: {x: -0.0000002336502, y: 0.070253275, z: 0.000000009536743}
   m_LocalScale: {x: 1, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4887,6 +4906,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4961,6 +4983,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5353,6 +5378,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5488,8 +5516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927649303861590968}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0000000074505815, y: -0.000000005587935, z: -0.0000000949949,
-    w: 1}
+  m_LocalRotation: {x: -0.0000000074505815, y: -0.000000005587935, z: -0.0000000949949, w: 1}
   m_LocalPosition: {x: 0.000000038146972, y: 0.21301849, z: 0.000000019073486}
   m_LocalScale: {x: 1, y: 1, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -5609,6 +5636,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5893,6 +5923,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6152,8 +6185,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2172163694805147937}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000014901093, y: -0.00000010430814, z: 0.0000006593763,
-    w: 1}
+  m_LocalRotation: {x: -0.000000014901093, y: -0.00000010430814, z: 0.0000006593763, w: 1}
   m_LocalPosition: {x: -0.00000025749205, y: 0.30425078, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -6216,8 +6248,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2182723375588168798}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000045262303, y: 0.00000010430752, z: -0.0000014081602,
-    w: 1}
+  m_LocalRotation: {x: 0.00000045262303, y: 0.00000010430752, z: -0.0000014081602, w: 1}
   m_LocalPosition: {x: -0.0000002479553, y: 0.12453472, z: -0.000000076293944}
   m_LocalScale: {x: 0.9999998, y: 0.99999976, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -6371,6 +6402,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6655,6 +6689,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6914,8 +6951,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2345348203528344178}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000004246832, y: 0.0000000037251833, z: -0.00000025331977,
-    w: 1}
+  m_LocalRotation: {x: 0.0000004246832, y: 0.0000000037251833, z: -0.00000025331977, w: 1}
   m_LocalPosition: {x: 0.00000015258789, y: 0.3713349, z: 0}
   m_LocalScale: {x: 0.9999999, y: 0.99999976, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -6979,8 +7015,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2401130861556440143}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0000024363392, y: 0.0000002980269, z: -0.0000015033867,
-    w: 1}
+  m_LocalRotation: {x: -0.0000024363392, y: 0.0000002980269, z: -0.0000015033867, w: 1}
   m_LocalPosition: {x: 0.0000006532669, y: 0.07025327, z: -0.00000011920929}
   m_LocalScale: {x: 1, y: 1.0000001, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -7138,8 +7173,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2524490306901613898}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000035762784, y: 0.0000001778828, z: 0.00000039814043,
-    w: 1}
+  m_LocalRotation: {x: 0.00000035762784, y: 0.0000001778828, z: 0.00000039814043, w: 1}
   m_LocalPosition: {x: 0.0000002938509, y: 0.18444367, z: -0.000000019073486}
   m_LocalScale: {x: 0.9999998, y: 0.99999994, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12082,6 +12116,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12121,13 +12158,15 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 11.57, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
+  m_UseCustomVertexStreams: 0
   m_VertexStreams: 00010304
+  m_UseCustomTrailVertexStreams: 0
+  m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -12274,6 +12313,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12413,6 +12455,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12697,6 +12742,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -12981,6 +13029,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13240,8 +13291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2983212117397917140}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000029802326, y: 0.000000016763801, z: -0.00000015459953,
-    w: 1}
+  m_LocalRotation: {x: 0.000000029802326, y: 0.000000016763801, z: -0.00000015459953, w: 1}
   m_LocalPosition: {x: 0.000000030994414, y: 0.1443691, z: -0.000000028610229}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -13272,8 +13322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3003672184035970158}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000008195632, y: 0.00000019185251, z: 0.0000003650785,
-    w: 1}
+  m_LocalRotation: {x: 0.00000008195632, y: 0.00000019185251, z: 0.0000003650785, w: 1}
   m_LocalPosition: {x: 0.00000019073485, y: 0.23471706, z: -0.000000028610229}
   m_LocalScale: {x: 0.99999994, y: 1, z: 0.9999999}
   m_ConstrainProportionsScale: 0
@@ -13304,8 +13353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3016710094705771425}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000013783574, y: 0.00000006332991, z: -0.00000023096801,
-    w: 1}
+  m_LocalRotation: {x: 0.00000013783574, y: 0.00000006332991, z: -0.00000023096801, w: 1}
   m_LocalPosition: {x: 0.000000076293944, y: 0.27573797, z: 0.000000009536743}
   m_LocalScale: {x: 1, y: 1.0000001, z: 0.9999998}
   m_ConstrainProportionsScale: 0
@@ -13336,8 +13384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3023724478961500439}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000000121071935, y: -0.00000003207242, z: -0.0000000037252899,
-    w: 1}
+  m_LocalRotation: {x: 0.0000000121071935, y: -0.00000003207242, z: -0.0000000037252899, w: 1}
   m_LocalPosition: {x: -0.0000000023841857, y: -0.000000050198285, z: 0.000000026375055}
   m_LocalScale: {x: 1, y: 1, z: 1.0000004}
   m_ConstrainProportionsScale: 0
@@ -13393,6 +13440,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13677,6 +13727,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13961,6 +14014,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14226,8 +14282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3190578372599192941}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000002048909, y: -0.00000024959454, z: -0.0000002607703,
-    w: 1}
+  m_LocalRotation: {x: 0.0000002048909, y: -0.00000024959454, z: -0.0000002607703, w: 1}
   m_LocalPosition: {x: -0.000000019073486, y: 0.29797179, z: 0.000000095367426}
   m_LocalScale: {x: 0.99999994, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -14321,8 +14376,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3344372334580437783}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000045634795, y: 0.000000024912897, z: 0.000000030733638,
-    w: 1}
+  m_LocalRotation: {x: 0.00000045634795, y: 0.000000024912897, z: 0.000000030733638, w: 1}
   m_LocalPosition: {x: 0.00000012993813, y: 0.073831536, z: 0.00000020503997}
   m_LocalScale: {x: 0.9999999, y: 1.0000002, z: 1}
   m_ConstrainProportionsScale: 0
@@ -14385,8 +14439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3430403578412032977}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000044703434, y: 0.000000081956415, z: -0.0000006183982,
-    w: 1}
+  m_LocalRotation: {x: -0.000000044703434, y: 0.000000081956415, z: -0.0000006183982, w: 1}
   m_LocalPosition: {x: 0.000000095367426, y: 0.3042509, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -14474,6 +14527,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14790,6 +14846,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15081,8 +15140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3687601563171396143}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000015273694, y: -0.00000011362132, z: 0.00000032782557,
-    w: 1}
+  m_LocalRotation: {x: 0.00000015273694, y: -0.00000011362132, z: 0.00000032782557, w: 1}
   m_LocalPosition: {x: -0.000000038146972, y: 0.29033783, z: 0.000000019073486}
   m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -15212,6 +15270,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15351,6 +15412,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -15666,6 +15730,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16045,6 +16112,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16336,8 +16406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4205339939280464648}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000027939665, y: 0.0000003944151, z: -0.000000023748715,
-    w: 1}
+  m_LocalRotation: {x: -0.000000027939665, y: 0.0000003944151, z: -0.000000023748715, w: 1}
   m_LocalPosition: {x: -0, y: 0.18558714, z: 0.000000008940696}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
@@ -16435,6 +16504,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16531,6 +16603,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16815,6 +16890,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17074,8 +17152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4348366703915074799}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000004470349, y: -0.000000003725286, z: 0.00000010430815,
-    w: 1}
+  m_LocalRotation: {x: 0.00000004470349, y: -0.000000003725286, z: 0.00000010430815, w: 1}
   m_LocalPosition: {x: -0.000000042915342, y: 0.3152145, z: -0.000000038146972}
   m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
@@ -17131,6 +17208,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17415,6 +17495,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17699,6 +17782,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -17983,6 +18069,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -18242,8 +18331,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4466978096382568527}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000060349714, y: -0.0000001601872, z: 0.0000004842879,
-    w: 1}
+  m_LocalRotation: {x: 0.00000060349714, y: -0.0000001601872, z: 0.0000004842879, w: 1}
   m_LocalPosition: {x: 0.00000028610228, y: 0.37573305, z: -0.000000076293944}
   m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
@@ -18299,6 +18387,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -18590,8 +18681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4562718131706403460}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000015646222, y: -0.00000005960459, z: 0.0000003501773,
-    w: 1}
+  m_LocalRotation: {x: 0.00000015646222, y: -0.00000005960459, z: 0.0000003501773, w: 1}
   m_LocalPosition: {x: -0.000000019073486, y: 0.29700506, z: -0.000000114440915}
   m_LocalScale: {x: 1, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
@@ -18678,6 +18768,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -18937,8 +19030,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4651079928561745224}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000002756715, y: -0.000000059604535, z: 0.00000043213376,
-    w: 1}
+  m_LocalRotation: {x: 0.0000002756715, y: -0.000000059604535, z: 0.00000043213376, w: 1}
   m_LocalPosition: {x: 0.000000038146972, y: 0.29750836, z: 0.000000038146972}
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -18994,6 +19086,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -19253,8 +19348,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4701697135248738698}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000040978254, y: 0.000000141561, z: 0.00000042468304,
-    w: 1}
+  m_LocalRotation: {x: -0.000000040978254, y: 0.000000141561, z: 0.00000042468304, w: 1}
   m_LocalPosition: {x: 0.00000017642975, y: 0.17319103, z: -0.000000057220458}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19320,6 +19414,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -19448,6 +19545,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -19707,8 +19807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4885108567117985171}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000066123924, y: 0.000000100582874, z: -0.00000033155086,
-    w: 1}
+  m_LocalRotation: {x: -0.000000066123924, y: 0.000000100582874, z: -0.00000033155086, w: 1}
   m_LocalPosition: {x: 0.00000007867813, y: -0.00000012397766, z: -0.0000000035762786}
   m_LocalScale: {x: 0.99999994, y: 0.99999917, z: 0.99999976}
   m_ConstrainProportionsScale: 0
@@ -19764,6 +19863,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -20056,8 +20158,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4984573046067764590}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000011175869, y: 0.00000011175874, z: -0.00000020861624,
-    w: 1}
+  m_LocalRotation: {x: -0.00000011175869, y: 0.00000011175874, z: -0.00000020861624, w: 1}
   m_LocalPosition: {x: 0.0000000667572, y: 0.28772232, z: 0.000000038146972}
   m_LocalScale: {x: 1, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -20216,8 +20317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5337246590745223544}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000037252907, y: 0.000000020489095, z: 0.000000055879354,
-    w: 1}
+  m_LocalRotation: {x: -0.000000037252907, y: 0.000000020489095, z: 0.000000055879354, w: 1}
   m_LocalPosition: {x: 0.00000007867813, y: 0.14436892, z: -0.000000023841856}
   m_LocalScale: {x: 1, y: 0.99999994, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -20317,6 +20417,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -20389,8 +20492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5387390092959768726}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000012293458, y: 0.000000055879323, z: -0.00000025331974,
-    w: 1}
+  m_LocalRotation: {x: 0.00000012293458, y: 0.000000055879323, z: -0.00000025331974, w: 1}
   m_LocalPosition: {x: 0.000000057220458, y: 0.20767193, z: 0.000000019073486}
   m_LocalScale: {x: 1, y: 1.0000001, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -20446,6 +20548,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -20864,6 +20969,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -21339,6 +21447,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -21750,6 +21861,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -22034,6 +22148,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -22328,6 +22445,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -22493,6 +22613,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -22841,6 +22964,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -23100,8 +23226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6231071770729751080}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000004284084, y: 0.00000022538002, z: -0.00000014156113,
-    w: 1}
+  m_LocalRotation: {x: 0.0000004284084, y: 0.00000022538002, z: -0.00000014156113, w: 1}
   m_LocalPosition: {x: -0.000000095367426, y: 0.37626487, z: -0.000000019073486}
   m_LocalScale: {x: 0.9999999, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -23198,6 +23323,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -23247,8 +23375,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6323183825664397168}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000011175872, y: 0.00000006705518, z: -0.0000003799796,
-    w: 1}
+  m_LocalRotation: {x: 0.00000011175872, y: 0.00000006705518, z: -0.0000003799796, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0.17319104, z: 0.000000038146972}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
@@ -23336,6 +23463,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -23620,6 +23750,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -23879,8 +24012,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6436891605704285549}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000013597307, y: 0.000000044936325, z: -0.00000009685755,
-    w: 1}
+  m_LocalRotation: {x: -0.00000013597307, y: 0.000000044936325, z: -0.00000009685755, w: 1}
   m_LocalPosition: {x: 0.000000114440915, y: 0.19841869, z: -0.000000007152557}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -23911,8 +24043,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6442298316325950494}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0000000782311, y: 0.000000037252896, z: 0.000000096857555,
-    w: 1}
+  m_LocalRotation: {x: -0.0000000782311, y: 0.000000037252896, z: 0.000000096857555, w: 1}
   m_LocalPosition: {x: 0.00000018119812, y: 0.2877224, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -23968,6 +24099,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -24261,6 +24395,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -24311,8 +24448,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6500676702349800569}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000032596258, y: -0.000000045634806, z: -0.0000001844019,
-    w: 1}
+  m_LocalRotation: {x: -0.000000032596258, y: -0.000000045634806, z: -0.0000001844019, w: 1}
   m_LocalPosition: {x: -0.00000014066696, y: 0.000000042915342, z: 0.000000014305114}
   m_LocalScale: {x: 0.9999999, y: 1.0000012, z: 0.99999964}
   m_ConstrainProportionsScale: 0
@@ -24380,8 +24516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6516667455078626217}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000016763806, y: -0.00000007078049, z: -0.00000014901163,
-    w: 1}
+  m_LocalRotation: {x: -0.00000016763806, y: -0.00000007078049, z: -0.00000014901163, w: 1}
   m_LocalPosition: {x: 0.00000017404555, y: 0.07393661, z: 0.00000027894973}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000002}
   m_ConstrainProportionsScale: 0
@@ -24469,6 +24604,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -24714,7 +24852,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6316961485668593203}
   - component: {fileID: 6100055482358212821}
-  - component: {fileID: 7893963122064852166}
   m_Layer: 0
   m_Name: LowPoly_AngelKnight
   m_TagString: Untagged
@@ -24803,7 +24940,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6100055482358212821
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -24817,34 +24954,12 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!136 &7893963122064852166
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6692784093168006281}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.18
-  m_Height: 1.62
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.82, z: 0}
 --- !u!1 &6709404311232222322
 GameObject:
   m_ObjectHideFlags: 0
@@ -29660,6 +29775,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -29699,13 +29817,15 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 11.57, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
+  m_UseCustomVertexStreams: 0
   m_VertexStreams: 00010304
+  m_UseCustomTrailVertexStreams: 0
+  m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -29796,6 +29916,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -30055,8 +30178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6828323829556515925}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000005960461, y: -0.000000046566157, z: -0.0000004246831,
-    w: 1}
+  m_LocalRotation: {x: 0.00000005960461, y: -0.000000046566157, z: -0.0000004246831, w: 1}
   m_LocalPosition: {x: -0, y: 0.22880308, z: 0.000000028610229}
   m_LocalScale: {x: 1, y: 1.0000002, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -30118,8 +30240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6856510468206923953}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000017090235, y: 0.00018652363, z: 0.000000024209884,
-    w: 1}
+  m_LocalRotation: {x: -0.00000017090235, y: 0.00018652363, z: 0.000000024209884, w: 1}
   m_LocalPosition: {x: 0.000000002980232, y: 0.12323128, z: -0.000000004954636}
   m_LocalScale: {x: 1, y: 0.9999991, z: 0.9999998}
   m_ConstrainProportionsScale: 0
@@ -30175,6 +30296,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -30434,8 +30558,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6893610266387858911}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000027869834, y: 0.000000063329864, z: -0.0000002931338,
-    w: 1}
+  m_LocalRotation: {x: 0.00000027869834, y: 0.000000063329864, z: -0.0000002931338, w: 1}
   m_LocalPosition: {x: -0.00000022888183, y: 0.33301333, z: -0.0000003814697}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -30497,8 +30620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6904722451199882078}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000009685756, y: -0.000000011175885, z: -0.00000013038517,
-    w: 1}
+  m_LocalRotation: {x: 0.00000009685756, y: -0.000000011175885, z: -0.00000013038517, w: 1}
   m_LocalPosition: {x: 0.0000000333786, y: 0.31521422, z: -0.000000057220458}
   m_LocalScale: {x: 0.9999999, y: 0.9999998, z: 0.9999998}
   m_ConstrainProportionsScale: 0
@@ -30554,6 +30676,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -30912,6 +31037,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -31041,6 +31169,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -31357,6 +31488,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -31616,8 +31750,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7420416431254578590}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000011688099, y: -0.000000039115562, z: 0.00000009685755,
-    w: 1}
+  m_LocalRotation: {x: -0.00000011688099, y: -0.000000039115562, z: 0.00000009685755, w: 1}
   m_LocalPosition: {x: -0.000000076293944, y: 0.19841905, z: 0.000000017881392}
   m_LocalScale: {x: 1, y: 0.9999999, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -31648,8 +31781,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7433618731333889637}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000013783576, y: -0.000000035390197, z: 0.00000045448547,
-    w: 1}
+  m_LocalRotation: {x: 0.00000013783576, y: -0.000000035390197, z: 0.00000045448547, w: 1}
   m_LocalPosition: {x: 0.000000019073486, y: 0.2288031, z: -0.000000047683713}
   m_LocalScale: {x: 0.9999999, y: 1, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -31712,8 +31844,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7494930247663808690}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000003390015, y: -0.00000029243523, z: 0.00000018626461,
-    w: 1}
+  m_LocalRotation: {x: 0.0000003390015, y: -0.00000029243523, z: 0.00000018626461, w: 1}
   m_LocalPosition: {x: 0.00000040531157, y: 0.3762645, z: -0.000000095367426}
   m_LocalScale: {x: 1, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
@@ -31929,6 +32060,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -32213,6 +32347,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -32497,6 +32634,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -32819,8 +32959,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7909489869138693330}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000074505806, y: -0.000000093132265, z: -0.00000006705522,
-    w: 1}
+  m_LocalRotation: {x: 0.000000074505806, y: -0.000000093132265, z: -0.00000006705522, w: 1}
   m_LocalPosition: {x: 0.00000019073485, y: 0.25258633, z: -0.000000047683713}
   m_LocalScale: {x: 1, y: 1, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -32851,8 +32990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7924652842825031025}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000029080553, y: -0.00000007823101, z: 0.00000030314553,
-    w: 1}
+  m_LocalRotation: {x: 0.00000029080553, y: -0.00000007823101, z: 0.00000030314553, w: 1}
   m_LocalPosition: {x: -0.00000020980835, y: 0.33301347, z: -0.000000076293944}
   m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
   m_ConstrainProportionsScale: 0
@@ -32908,6 +33046,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -33294,8 +33435,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8147858710708176268}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000029522934, y: -0.00000017695127, z: -0.000000085681734,
-    w: 1}
+  m_LocalRotation: {x: -0.00000029522934, y: -0.00000017695127, z: -0.000000085681734, w: 1}
   m_LocalPosition: {x: -0, y: 0.3065193, z: -0.00000017642975}
   m_LocalScale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -33351,6 +33491,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -33667,6 +33810,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -34021,8 +34167,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8437573355433813391}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000010430817, y: -0.000000081956344, z: 0.00000046193603,
-    w: 1}
+  m_LocalRotation: {x: 0.00000010430817, y: -0.000000081956344, z: 0.00000046193603, w: 1}
   m_LocalPosition: {x: -0.00000012397766, y: 0.31336093, z: -0.000000038146972}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -34078,6 +34223,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -34490,6 +34638,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -34774,6 +34925,9 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -35181,8 +35335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8796033709296033746}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000013411054, y: 0.00000013411037, z: -0.0000006742776,
-    w: 1}
+  m_LocalRotation: {x: 0.00000013411054, y: 0.00000013411037, z: -0.0000006742776, w: 1}
   m_LocalPosition: {x: -0.00000041484833, y: 0.07393665, z: 0.0000002002716}
   m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -35320,8 +35473,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8921472549370306484}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000055879397, y: 0.0000001247972, z: -0.00000039488077,
-    w: 1}
+  m_LocalRotation: {x: 0.000000055879397, y: 0.0000001247972, z: -0.00000039488077, w: 1}
   m_LocalPosition: {x: -0.000000038146972, y: 0.2903377, z: -0.000000047683713}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -35384,8 +35536,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9178586745697461419}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000015646216, y: -0.000000074505856, z: -0.00000034272668,
-    w: 1}
+  m_LocalRotation: {x: 0.00000015646216, y: -0.000000074505856, z: -0.00000034272668, w: 1}
   m_LocalPosition: {x: 0.0000001335144, y: 0.2970051, z: -0.000000076293944}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
@@ -40167,6 +40318,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -40205,13 +40359,15 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
+  m_UseCustomVertexStreams: 0
   m_VertexStreams: 00010304
+  m_UseCustomTrailVertexStreams: 0
+  m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -40231,7 +40387,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3bf1ee3370ce48d418fe99f6d3a0479a, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 3bf1ee3370ce48d418fe99f6d3a0479a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.09
   m_Pitch: -0.72
@@ -45092,6 +45249,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -45130,13 +45290,15 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
+  m_UseCustomVertexStreams: 0
   m_VertexStreams: 00010304
+  m_UseCustomTrailVertexStreams: 0
+  m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -45156,7 +45318,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3bf1ee3370ce48d418fe99f6d3a0479a, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 3bf1ee3370ce48d418fe99f6d3a0479a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.09
   m_Pitch: -0.72
@@ -50021,6 +50184,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -50059,13 +50225,15 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
+  m_UseCustomVertexStreams: 0
   m_VertexStreams: 00010304
+  m_UseCustomTrailVertexStreams: 0
+  m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -54864,6 +55032,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -54902,13 +55073,15 @@ ParticleSystemRenderer:
   m_RenderAlignment: 2
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
+  m_UseCustomVertexStreams: 0
   m_VertexStreams: 00010304
+  m_UseCustomTrailVertexStreams: 0
+  m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -54928,7 +55101,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3bf1ee3370ce48d418fe99f6d3a0479a, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 3bf1ee3370ce48d418fe99f6d3a0479a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.09
   m_Pitch: -0.72
@@ -59789,6 +59963,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -59827,13 +60004,15 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
+  m_UseCustomVertexStreams: 0
   m_VertexStreams: 00010304
+  m_UseCustomTrailVertexStreams: 0
+  m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -59853,7 +60032,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3bf1ee3370ce48d418fe99f6d3a0479a, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 3bf1ee3370ce48d418fe99f6d3a0479a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.09
   m_Pitch: -0.72

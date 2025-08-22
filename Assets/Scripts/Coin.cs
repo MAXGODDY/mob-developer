@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-
+    private const string CoinTrigger = "CoinTrigger";
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"Coin collided with: {other.gameObject.tag} {PlayerController.PlayerTag}");
-        if (other.gameObject.CompareTag(PlayerController.PlayerTag))
+        if (other.gameObject.tag == CoinTrigger)
         {
             SingletonScoreManager._score++;
             SingletonScoreManager._text.text = SingletonScoreManager._score.ToString();
             Destroy(gameObject);
-            Debug.Log($"Coin collected! New score: {SingletonScoreManager._score}");
         }
     }
 }
