@@ -2,26 +2,22 @@ using UnityEngine;
 
 public class CoinGenerator : MonoBehaviour
 {
-    [SerializeField] private GameObject _coin;
-    [SerializeField] private Transform[] _points;
-
-    [SerializeField] private byte _minCoins;
+    [SerializeField] private GameObject _coinPrefab;
+    [SerializeField] private Transform[] _spawnPoints;
+    [SerializeField] private int _minCoins = 3;
 
     private void Start()
     {
         Generate();
     }
 
-
-
     public void Generate()
     {
-        int coinsToGenerate = UnityEngine.Random.Range((int)_minCoins, _points.Length + 1);
-
+        int coinsToGenerate = Random.Range(_minCoins, _spawnPoints.Length + 1);
 
         for (int i = 0; i < coinsToGenerate; i++)
         {
-            Instantiate(_coin, _points[i]);
+            Instantiate(_coinPrefab, _spawnPoints[i]);
         }
 
     }

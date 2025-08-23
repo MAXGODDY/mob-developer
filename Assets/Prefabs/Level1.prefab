@@ -4136,7 +4136,7 @@ MonoBehaviour:
     min: {x: -75, y: -0.667, z: -25}
     size: {x: 150, y: 11.659916, z: 30}
   builders: []
-  unpacked: 0
+  unpacked: 1
   alwaysDraw: 0
   drawGeneratedSpline: 1
   drawGeneratedSamples: 1
@@ -4144,7 +4144,7 @@ MonoBehaviour:
   drawEntranceAndExit: 1
   drawBounds: 1
   drawCustomPaths: 1
-  editorChildCount: 120
+  editorChildCount: 119
 --- !u!114 &1371548478016350648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4157,13 +4157,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f5dbd247a6667041a352db500013401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coin: {fileID: 1423928566906578, guid: 12dd4bed2dc6fe745ab82d7e1a34165d, type: 3}
-  _points:
+  _coinPrefab: {fileID: 1423928566906578, guid: 12dd4bed2dc6fe745ab82d7e1a34165d, type: 3}
+  _spawnPoints:
   - {fileID: 5196798609227746974}
   - {fileID: 207647810856944749}
   - {fileID: 4157044281355872025}
   - {fileID: 7701690845304101677}
-  - {fileID: 8404602992871309454}
   - {fileID: 6747864543863455508}
   - {fileID: 8742235915368855818}
   - {fileID: 4312156930034430509}

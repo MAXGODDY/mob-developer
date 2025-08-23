@@ -1,16 +1,21 @@
 using Game;
-using TMPro;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    private const string CoinTrigger = "CoinTrigger";
+    private bool collected = false;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == CoinTrigger)
+        if (collected) return;
+
+        if (other.GetComponentInParent<PlayerController>() != null)
         {
-            SingletonScoreManager._score++;
-            SingletonScoreManager._text.text = SingletonScoreManager._score.ToString();
+            collected = true;
+            GetComponent<Collider>().enabled = false;
+
+            ScoreManager.Instance.AddScore(1);
+
             Destroy(gameObject);
         }
     }

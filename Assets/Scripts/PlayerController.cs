@@ -40,7 +40,7 @@ namespace Game
 
         public void SwitchAnimation()
         {
-            if (_basicRunner.followSpeed == 20)
+            if (_basicRunner.followSpeed == _playerpositionZ)
             {
                 _animator.SetBool(RunningBool, true);
                 _animator.SetBool(idelBool, false);
