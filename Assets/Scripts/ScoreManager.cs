@@ -5,6 +5,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance { get; private set; }
 
+
     [SerializeField] private TMP_Text scoreText;
 
     private int score;

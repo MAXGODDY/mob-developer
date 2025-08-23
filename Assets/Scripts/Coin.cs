@@ -1,4 +1,5 @@
 using Game;
+using JSAM;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
@@ -13,10 +14,12 @@ public class Coin : MonoBehaviour
         {
             collected = true;
             GetComponent<Collider>().enabled = false;
+            AudioManager.PlaySound(LesonAudioSounds.HitSFX);
 
             ScoreManager.Instance.AddScore(1);
 
             Destroy(gameObject);
+            
         }
     }
 }
