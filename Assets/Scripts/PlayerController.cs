@@ -18,6 +18,7 @@ namespace Game
         [SerializeField] private float _hp = 1f;
         [SerializeField] public GameObject _player;
 
+
         public const string PlayerTag = "Player";
         private const string DeathTrigger = "IsDeath";
 
@@ -69,6 +70,7 @@ namespace Game
             _inputController.MovementEnd += OnMovementEndd;
             _inputController.JumpStarted += OnJumpPressed;
             _inputController.Started += OnStarted;
+            _inputController.Setings += OnSetings;
         }
 
         private void UnsudscribeEvents()
@@ -77,6 +79,24 @@ namespace Game
             _inputController.MovementEnd -= OnMovementEndd;
             _inputController.JumpStarted -= OnJumpPressed;
             _inputController.Started -= OnStarted;
+            _inputController.Setings -= OnSetings;
+        }
+        private void OnSetings()
+        {
+            bool isActive = _lobiCanvas.activeSelf;
+
+            if (isActive)
+            {
+                StartLobiControler startLobiControler = _lobiCanvas.GetComponent<StartLobiControler>();
+                startLobiControler.OpenSetings();
+            }
+            else
+            {
+                StartLobiControler startLobiControler = _lobiCanvas.GetComponent<StartLobiControler>();
+                startLobiControler.CloseSetings();
+            }
+
+
         }
 
         private void OnStarted()

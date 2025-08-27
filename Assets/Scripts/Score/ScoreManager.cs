@@ -5,10 +5,10 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance { get; private set; }
 
+    [SerializeField] private TMP_Text _playScoreText;
 
-    [SerializeField] private TMP_Text scoreText;
-
-    private int score;
+    private int sessionScore;
+    private PlayerData _playerData;
 
     private void Awake()
     {
@@ -22,20 +22,25 @@ public class ScoreManager : MonoBehaviour
 
     private void Start()
     {
+        _playerData = GameSaver.Load();
+        sessionScore = 0;
         UpdateUI();
     }
 
     public void AddScore(int value)
     {
-        score += value;
+        sessionScore += value;
+        _playerData.TotalScore += value;
+        GameSaver.Save(_playerData);
         UpdateUI();
     }
 
     private void UpdateUI()
     {
-        if (scoreText != null)
-            scoreText.text = score.ToString();
+        if (_playScoreText != null)
+            _playScoreText.text = sessionScore.ToString();
     }
 
-    public int GetScore() => score;
+    public int GetSessionScore() => sessionScore;
+    public int GetTotalScore() => _playerData.TotalScore;
 }

@@ -25,8 +25,6 @@ public class LoadingScreenController : MonoBehaviour
         if (PlayerController._player.transform.position.z == _playerpositionZ)
         {
             PlayerController._basicRunner.followSpeed = 0;
-            
-            Debug.Log("Player reached the target position, stopping the runner.");
         }
     }
 
@@ -34,10 +32,6 @@ public class LoadingScreenController : MonoBehaviour
     {
         StartCoroutine(FadeOut(_fadeOutDuration, _targetAlpha, _loadingScreen));
     }
-
-
-
-
 
     private IEnumerator FadeOut(float duration, float targetAlpha, CanvasGroup loading)
     {
@@ -60,7 +54,7 @@ public class LoadingScreenController : MonoBehaviour
             yield return null;
 
         }
-        _canvas.SetActive(false); // отключает объект и все его компоненты
+        _canvas.SetActive(false);
         _lobiCanvas.SetActive(true);
 
     }

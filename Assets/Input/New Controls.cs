@@ -53,6 +53,15 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Setings"",
+                    ""type"": ""Button"",
+                    ""id"": ""4b4ddde1-f404-496a-8a4a-fd42100e3644"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -165,6 +174,28 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
                     ""action"": ""Start"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3aa072c8-0b23-486e-aa63-460fb36f98a4"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Setings"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d0229124-8628-4de5-bd90-34e2a2baa1bb"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Setings"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -176,6 +207,7 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
         m_Default_Movement = m_Default.FindAction("Movement", throwIfNotFound: true);
         m_Default_Jump = m_Default.FindAction("Jump", throwIfNotFound: true);
         m_Default_Start = m_Default.FindAction("Start", throwIfNotFound: true);
+        m_Default_Setings = m_Default.FindAction("Setings", throwIfNotFound: true);
     }
 
     ~@NewControls()
@@ -245,6 +277,7 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Default_Movement;
     private readonly InputAction m_Default_Jump;
     private readonly InputAction m_Default_Start;
+    private readonly InputAction m_Default_Setings;
     public struct DefaultActions
     {
         private @NewControls m_Wrapper;
@@ -252,6 +285,7 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
         public InputAction @Movement => m_Wrapper.m_Default_Movement;
         public InputAction @Jump => m_Wrapper.m_Default_Jump;
         public InputAction @Start => m_Wrapper.m_Default_Start;
+        public InputAction @Setings => m_Wrapper.m_Default_Setings;
         public InputActionMap Get() { return m_Wrapper.m_Default; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -270,6 +304,9 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
             @Start.started += instance.OnStart;
             @Start.performed += instance.OnStart;
             @Start.canceled += instance.OnStart;
+            @Setings.started += instance.OnSetings;
+            @Setings.performed += instance.OnSetings;
+            @Setings.canceled += instance.OnSetings;
         }
 
         private void UnregisterCallbacks(IDefaultActions instance)
@@ -283,6 +320,9 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
             @Start.started -= instance.OnStart;
             @Start.performed -= instance.OnStart;
             @Start.canceled -= instance.OnStart;
+            @Setings.started -= instance.OnSetings;
+            @Setings.performed -= instance.OnSetings;
+            @Setings.canceled -= instance.OnSetings;
         }
 
         public void RemoveCallbacks(IDefaultActions instance)
@@ -305,5 +345,6 @@ public partial class @NewControls: IInputActionCollection2, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnStart(InputAction.CallbackContext context);
+        void OnSetings(InputAction.CallbackContext context);
     }
 }
