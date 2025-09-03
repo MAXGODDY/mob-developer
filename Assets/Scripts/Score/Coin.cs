@@ -5,6 +5,11 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     private bool collected = false;
+    GameFeedbackManager _gameFeedbackManager;
+    private void Start()
+    {
+        _gameFeedbackManager = FindObjectOfType<GameFeedbackManager>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,11 +21,13 @@ public class Coin : MonoBehaviour
             GetComponent<Collider>().enabled = false;
 
             AudioManager.PlaySound(LesonAudioSounds.HitSFX);
+            _gameFeedbackManager.PlayCoinTextFeedbacks();
+
 
             ScoreManager.Instance.AddScore(1);
+            
 
             Destroy(gameObject);
-            
         }
     }
 }
