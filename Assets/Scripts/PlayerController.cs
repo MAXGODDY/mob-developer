@@ -37,6 +37,8 @@ namespace Game
             _animator.SetTrigger(DeathTrigger);
             _hp--;
             _basicRunner.followSpeed = 0;
+            _inputController.Dispose();
+            ScoreManager.Instance.SaveScore();
         }
 
         public void SwitchAnimation()

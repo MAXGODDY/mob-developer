@@ -30,11 +30,16 @@ public class ScoreManager : MonoBehaviour
     public void AddScore(int value)
     {
         sessionScore += value;
-        _playerData.TotalScore += value;
-        GameSaver.Save(_playerData);
         UpdateUI();
     }
 
+    public void SaveScore()
+    {
+        _playerData.TotalScore += sessionScore;
+        GameSaver.Save(_playerData);
+        sessionScore = 0;
+        UpdateUI();
+    }
     private void UpdateUI()
     {
         if (_playScoreText != null)
