@@ -2933,11 +2933,11 @@ MonoBehaviour:
   _generateSegmentsAhead: 5
   _activateSegmentsAhead: 1
   _loadTimeout: 1
-  _maxSegments: 99
+  _maxSegments: 10
   _buildOnAwake: 1
   _multithreaded: 1
   _useUnloadUnusedAssets: 0
-  _loopSegmentLogic: 1
+  _loopSegmentLogic: 0
   _levelCollection:
   - {fileID: 11400000, guid: 57f18cdcc7428c7469ba2e8cb643dc33, type: 2}
   - {fileID: 11400000, guid: 8cc1f18c6088e2c4b95cc42b9994a45d, type: 2}
@@ -5337,7 +5337,7 @@ MonoBehaviour:
   startPercent: 0
   startDistance: 0
   startMode: 0
-  followSpeed: 20
+  followSpeed: 15
   follow: 1
   isPlayer: 1
   loop: 0
