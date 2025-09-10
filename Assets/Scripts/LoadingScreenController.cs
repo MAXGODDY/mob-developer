@@ -1,7 +1,9 @@
+using Controllers.Input;
 using Dreamteck.Forever;
 using Game;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem.XInput;
 
 public class LoadingScreenController : MonoBehaviour
 {

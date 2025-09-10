@@ -1,3 +1,4 @@
+using Controllers.Input;
 using Dreamteck.Forever;
 using Game;
 using TMPro;
@@ -7,7 +8,6 @@ using UnityEngine;
 
 public class StartLobiControler : MonoBehaviour
 {
-
     [SerializeField] private GameObject _mainCanvas;
     [SerializeField] private GameObject _lobiCanvas;
     [SerializeField] private GameObject _setingsCanvas;
@@ -19,13 +19,20 @@ public class StartLobiControler : MonoBehaviour
 
     public void StartGame()
     {
+        _playerController.SwitchInput(PlayerController.InputMode.Gameplay);
+        _setingsCanvas.SetActive(false);
         _lobiCanvas.SetActive(false);
         _mainCanvas.SetActive(true);
+
         _mainCamera.Priority = 11;
         _lobiCamera.Priority = 9;
+
         _playerController._basicRunner.followSpeed = 20f;
         _playerController.SwitchAnimation();
+        
+        Debug.Log("Start Game");
     }
+
 
     public void OpenSetings()
     {

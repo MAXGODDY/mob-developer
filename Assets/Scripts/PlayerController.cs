@@ -1,7 +1,8 @@
-using Controllers.Input;
+﻿using Controllers.Input;
 using Dreamteck.Forever;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
 
@@ -37,8 +38,8 @@ namespace Game
             _animator.SetTrigger(DeathTrigger);
             _hp--;
             _basicRunner.followSpeed = 0;
-            _inputController.Dispose();
             ScoreManager.Instance.SaveScore();
+            SwitchInput(InputMode.Menu);
         }
 
         public void SwitchAnimation()
@@ -58,16 +59,15 @@ namespace Game
 
         private void Awake()
         {
-            _inputController = new();
-            _inputController.SubscribeEvents();
+            _inputController = new InputController();
             _animator.SetBool(RunningBool, true);
-            SubsribeEvents();
         }
 
-
-
-        private void SubsribeEvents()
+        private void OnEnable()
         {
+            _inputController.SubscribeEvents();
+            _inputController.SubsribeEventsSetings();
+
             _inputController.MovementRecieved += OnMovementRecieved;
             _inputController.MovementEnd += OnMovementEndd;
             _inputController.JumpStarted += OnJumpPressed;
@@ -75,14 +75,18 @@ namespace Game
             _inputController.Setings += OnSetings;
         }
 
-        private void UnsudscribeEvents()
+        private void OnDisable()
         {
             _inputController.MovementRecieved -= OnMovementRecieved;
             _inputController.MovementEnd -= OnMovementEndd;
             _inputController.JumpStarted -= OnJumpPressed;
             _inputController.Started -= OnStarted;
             _inputController.Setings -= OnSetings;
+
+            _inputController.Dispose();
+            _inputController.DisposeSetings();
         }
+
         private void OnSetings()
         {
             bool isActive = _lobiCanvas.activeSelf;
@@ -97,8 +101,6 @@ namespace Game
                 StartLobiControler startLobiControler = _lobiCanvas.GetComponent<StartLobiControler>();
                 startLobiControler.CloseSetings();
             }
-
-
         }
 
         private void OnStarted()
@@ -132,12 +134,29 @@ namespace Game
             _basicRunner.motion.offset = finaloffset;
         }
 
-
-        private void OnDestroy()
+        public enum InputMode
         {
-            UnsudscribeEvents();
-            _inputController.Dispose();
+            Menu,
+            Gameplay
+        }
+        public InputMode CurrentInputMode { get; private set; }
 
+        public void SwitchInput(InputMode mode)
+        {
+            CurrentInputMode = mode;
+
+            switch (mode)
+            {
+                case InputMode.Menu:
+                    _inputController.SwitchToMenu();
+                    Debug.Log("Input switched to MENU");
+                    break;
+
+                case InputMode.Gameplay:
+                    _inputController.SwitchToGameplay();
+                    Debug.Log("Input switched to GAMEPLAY");
+                    break;
+            }
         }
     }
 }
