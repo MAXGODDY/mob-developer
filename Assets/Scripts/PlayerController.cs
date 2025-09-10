@@ -11,6 +11,10 @@ namespace Game
     public class PlayerController : MonoBehaviour
     {
         private InputController _inputController;
+
+        [SerializeField] private PlayerStats _playerStats;
+
+
         [SerializeField] public Runner _basicRunner;
         [SerializeField] private float _slideSpeed = 5f;
         [SerializeField] private float _joystickSlow = 2f;
@@ -18,6 +22,10 @@ namespace Game
         [SerializeField] private GameObject _lobiCanvas;
         [SerializeField] private float _hp = 1f;
         [SerializeField] public GameObject _player;
+
+        private float _currentSpeed;
+        private float _runTime;
+        private bool _isRunning = false;
 
 
         public const string PlayerTag = "Player";
@@ -32,19 +40,32 @@ namespace Game
         private float _addValue;
         private const int LevelWidth = 5;
         public float _playerpositionZ = 20;
+        
+
+
+        private void Start()
+        {
+            _currentSpeed = _playerStats.initialSpeed;
+            _basicRunner.followSpeed = 20f;
+            _runTime = 0f;
+        }
 
         public void HandleDeath()
         {
             _animator.SetTrigger(DeathTrigger);
             _hp--;
-            _basicRunner.followSpeed = 0;
+            _isRunning = false;
+            _currentSpeed = 0f;
+            _runTime = 0f;
+            _basicRunner.followSpeed = 0f;
+
             ScoreManager.Instance.SaveScore();
             SwitchInput(InputMode.Menu);
         }
 
         public void SwitchAnimation()
         {
-            if (_basicRunner.followSpeed == _playerpositionZ)
+            if (_isRunning)
             {
                 _animator.SetBool(RunningBool, true);
                 _animator.SetBool(idelBool, false);
@@ -129,10 +150,30 @@ namespace Game
 
         private void Update()
         {
+            if (_isRunning)
+            {
+                _runTime += Time.deltaTime;
+
+                _currentSpeed = Mathf.Min(
+                    _playerStats.initialSpeed + _playerStats.accelerationRate * _runTime,
+                    _playerStats.maxSpeed
+                );
+
+                _basicRunner.followSpeed = _currentSpeed;
+            }
             _targetVector = new Vector2(Mathf.Clamp(_targetVector.x + _addValue, -LevelWidth, LevelWidth), 0.4f);
             var finaloffset = Vector2.MoveTowards(_basicRunner.motion.offset, _targetVector, _slideSpeed * Time.deltaTime);
             _basicRunner.motion.offset = finaloffset;
         }
+
+        public void StartRunning()
+        {
+            _isRunning = true;
+            _runTime = 0f;
+            _currentSpeed = _playerStats.initialSpeed;
+            _basicRunner.followSpeed = _currentSpeed;
+        }
+
 
         public enum InputMode
         {

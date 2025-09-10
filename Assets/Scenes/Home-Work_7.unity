@@ -5303,6 +5303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45489c1253072b346beb87b0f90e399c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerStats: {fileID: 11400000, guid: 2d7bac163467dd249aa9a05cdbc43a75, type: 2}
   _basicRunner: {fileID: 2049143112}
   _slideSpeed: 5
   _joystickSlow: 2

@@ -27,9 +27,11 @@ public class StartLobiControler : MonoBehaviour
         _mainCamera.Priority = 11;
         _lobiCamera.Priority = 9;
 
-        _playerController._basicRunner.followSpeed = 20f;
-        _playerController.SwitchAnimation();
         
+        _playerController.StartRunning();
+        _playerController.SwitchAnimation();
+
+
         Debug.Log("Start Game");
     }
 
