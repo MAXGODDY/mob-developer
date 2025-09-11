@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DefaultPlayerStats
   m_EditorClassIdentifier: 
   initialSpeed: 10
-  maxSpeed: 30
-  accelerationRate: 0.5
+  maxSpeed: 50
+  accelerationRate: 10
