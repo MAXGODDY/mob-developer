@@ -1831,10 +1831,9 @@ MonoBehaviour:
     _settingsComponent: {fileID: 0}
     overrideSettingsComponent: 0
     meshFilter: {fileID: 1604805953780572558}
-    meshCollider: {fileID: 1645832369073079378}
+    meshCollider: {fileID: 0}
     spriteRenderer: {fileID: 0}
-    colliders:
-    - {fileID: 1645832369073079378}
+    colliders: []
     _isRoot: 0
   - transform: {fileID: 6713295467849477681}
     localRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -4136,7 +4135,7 @@ MonoBehaviour:
     min: {x: -75, y: -0.667, z: -25}
     size: {x: 150, y: 11.659916, z: 30}
   builders: []
-  unpacked: 1
+  unpacked: 0
   alwaysDraw: 0
   drawGeneratedSpline: 1
   drawGeneratedSamples: 1
@@ -4144,7 +4143,7 @@ MonoBehaviour:
   drawEntranceAndExit: 1
   drawBounds: 1
   drawCustomPaths: 1
-  editorChildCount: 119
+  editorChildCount: 120
 --- !u!114 &1371548478016350648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6462,7 +6461,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64651264646056938, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6475,11 +6475,6 @@ Transform:
 --- !u!33 &1604805953780572558 stripped
 MeshFilter:
   m_CorrespondingSourceObject: {fileID: 33757933749087798, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
-  m_PrefabInstance: {fileID: 1599486135102525368}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1645832369073079378 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 64651264646056938, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
   m_PrefabInstance: {fileID: 1599486135102525368}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1815080977458535303

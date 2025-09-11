@@ -1,5 +1,6 @@
 using Game;
 using UnityEngine;
+using VContainer;
 
 public class DamageOnCollision : MonoBehaviour
 {

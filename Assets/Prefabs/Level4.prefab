@@ -2880,39 +2880,6 @@ MonoBehaviour:
     spriteRenderer: {fileID: 0}
     colliders: []
     _isRoot: 0
-  - transform: {fileID: 8042899670275162984}
-    localRotation: {x: 0, y: 0, z: 0, w: 1}
-    extrudedMesh: {fileID: 0}
-    extrusionSpriteVertices: []
-    extrusionSpriteUVs: []
-    extrusionSpriteRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    extrudedCollisionMesh: {fileID: 0}
-    _extrusionSettings:
-      meshColliderHandling: 0
-      boundsInclusion: -1
-      indexing: 0
-      applyRotation: 1
-      keepUpright: 0
-      upVector: {x: 0, y: 1, z: 0}
-      applyScale: 0
-      bendMesh: 0
-      bendSprite: 0
-      bendPolygonCollider: 0
-      applyMeshColors: 0
-    _settingsComponent: {fileID: 0}
-    overrideSettingsComponent: 0
-    meshFilter: {fileID: 8068736599528253108}
-    meshCollider: {fileID: 8028696015809151848}
-    spriteRenderer: {fileID: 0}
-    colliders:
-    - {fileID: 8028696015809151848}
-    - {fileID: 8824892307039880314}
-    _isRoot: 0
   - transform: {fileID: 2834369991299668062}
     localRotation: {x: 0, y: 0, z: 0, w: 1}
     extrudedMesh: {fileID: 0}
@@ -2940,11 +2907,42 @@ MonoBehaviour:
     _settingsComponent: {fileID: 0}
     overrideSettingsComponent: 0
     meshFilter: {fileID: 2824394621075406210}
-    meshCollider: {fileID: 2855285064739854430}
+    meshCollider: {fileID: 0}
     spriteRenderer: {fileID: 0}
     colliders:
-    - {fileID: 2855285064739854430}
     - {fileID: 2956374247955213860}
+    _isRoot: 0
+  - transform: {fileID: 8042899670275162984}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    extrudedMesh: {fileID: 0}
+    extrusionSpriteVertices: []
+    extrusionSpriteUVs: []
+    extrusionSpriteRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    extrudedCollisionMesh: {fileID: 0}
+    _extrusionSettings:
+      meshColliderHandling: 0
+      boundsInclusion: -1
+      indexing: 0
+      applyRotation: 1
+      keepUpright: 0
+      upVector: {x: 0, y: 1, z: 0}
+      applyScale: 0
+      bendMesh: 0
+      bendSprite: 0
+      bendPolygonCollider: 0
+      applyMeshColors: 0
+    _settingsComponent: {fileID: 0}
+    overrideSettingsComponent: 0
+    meshFilter: {fileID: 8068736599528253108}
+    meshCollider: {fileID: 0}
+    spriteRenderer: {fileID: 0}
+    colliders:
+    - {fileID: 8824892307039880314}
     _isRoot: 0
   - transform: {fileID: 6986086710054237840}
     localRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2973,10 +2971,9 @@ MonoBehaviour:
     _settingsComponent: {fileID: 0}
     overrideSettingsComponent: 0
     meshFilter: {fileID: 6959300941935055692}
-    meshCollider: {fileID: 6919259690348164752}
+    meshCollider: {fileID: 0}
     spriteRenderer: {fileID: 0}
     colliders:
-    - {fileID: 6919259690348164752}
     - {fileID: 1991797784536228030}
     _isRoot: 0
   - transform: {fileID: 5356748524453467622}
@@ -3006,10 +3003,9 @@ MonoBehaviour:
     _settingsComponent: {fileID: 0}
     overrideSettingsComponent: 0
     meshFilter: {fileID: 5346065134180446266}
-    meshCollider: {fileID: 5378222338512262630}
+    meshCollider: {fileID: 0}
     spriteRenderer: {fileID: 0}
-    colliders:
-    - {fileID: 5378222338512262630}
+    colliders: []
     _isRoot: 0
   - transform: {fileID: 4132837775829416702}
     localRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3038,10 +3034,9 @@ MonoBehaviour:
     _settingsComponent: {fileID: 0}
     overrideSettingsComponent: 0
     meshFilter: {fileID: 4124520469097881378}
-    meshCollider: {fileID: 4156678219981732606}
+    meshCollider: {fileID: 0}
     spriteRenderer: {fileID: 0}
-    colliders:
-    - {fileID: 4156678219981732606}
+    colliders: []
     _isRoot: 0
   - transform: {fileID: 1841610568916415104}
     localRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3070,10 +3065,9 @@ MonoBehaviour:
     _settingsComponent: {fileID: 0}
     overrideSettingsComponent: 0
     meshFilter: {fileID: 1867094451857823580}
-    meshCollider: {fileID: 1836063266013688448}
+    meshCollider: {fileID: 0}
     spriteRenderer: {fileID: 0}
-    colliders:
-    - {fileID: 1836063266013688448}
+    colliders: []
     _isRoot: 0
   - transform: {fileID: 7896398457957588773}
     localRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3392,7 +3386,7 @@ MonoBehaviour:
     min: {x: -75, y: -0.56748235, z: -25}
     size: {x: 150, y: 5.427155, z: 30}
   builders: []
-  unpacked: 0
+  unpacked: 1
   alwaysDraw: 0
   drawGeneratedSpline: 1
   drawGeneratedSamples: 1
@@ -3400,7 +3394,7 @@ MonoBehaviour:
   drawEntranceAndExit: 1
   drawBounds: 1
   drawCustomPaths: 1
-  editorChildCount: 104
+  editorChildCount: 103
 --- !u!114 &8808959040608965844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3649,8 +3643,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8042899670275162984}
   - {fileID: 2834369991299668062}
+  - {fileID: 8042899670275162984}
   - {fileID: 6986086710054237840}
   - {fileID: 5356748524453467622}
   - {fileID: 4132837775829416702}
@@ -4888,11 +4882,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
---- !u!64 &1836063266013688448 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 64651264646056938, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
-  m_PrefabInstance: {fileID: 1846104399330523498}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1841610568916415104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4531248793881578, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
@@ -6109,11 +6098,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4531248793881578, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
   m_PrefabInstance: {fileID: 2829858538632647604}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &2855285064739854430 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 64651264646056938, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
-  m_PrefabInstance: {fileID: 2829858538632647604}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2890104059954000245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7005,11 +6989,6 @@ Rigidbody:
 --- !u!4 &4132837775829416702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4531248793881578, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
-  m_PrefabInstance: {fileID: 4128344189607817492}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &4156678219981732606 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 64651264646056938, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
   m_PrefabInstance: {fileID: 4128344189607817492}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4206365048725751044
@@ -7937,11 +7916,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4531248793881578, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
   m_PrefabInstance: {fileID: 5352219483292966412}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &5378222338512262630 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 64651264646056938, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
-  m_PrefabInstance: {fileID: 5352219483292966412}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5380778522666544208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8853,7 +8827,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64651264646056938, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -8867,11 +8842,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8973654884869385859}
   m_SourcePrefab: {fileID: 100100000, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
---- !u!64 &6919259690348164752 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 64651264646056938, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
-  m_PrefabInstance: {fileID: 6981575566006926714}
-  m_PrefabAsset: {fileID: 0}
 --- !u!33 &6959300941935055692 stripped
 MeshFilter:
   m_CorrespondingSourceObject: {fileID: 33757933749087798, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
@@ -9664,11 +9634,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7494473102204958699}
   m_SourcePrefab: {fileID: 100100000, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
---- !u!64 &8028696015809151848 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 64651264646056938, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
-  m_PrefabInstance: {fileID: 8038370659163965570}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8037655043748208988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1542802950924766, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}

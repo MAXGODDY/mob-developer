@@ -3,6 +3,7 @@ using Dreamteck.Forever;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using VContainer;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
 
@@ -22,6 +23,23 @@ namespace Game
         [SerializeField] private GameObject _lobiCanvas;
         [SerializeField] private float _hp = 1f;
         [SerializeField] public GameObject _player;
+
+
+        private GameFeedbackManager _feedbackManager;
+        private DeathUIController _deathUIController;
+
+        [Inject]
+        public void Construct(
+        GameFeedbackManager feedbackManager,
+        DeathUIController deathUIController)
+        {
+            _feedbackManager = feedbackManager;
+            _deathUIController = deathUIController;
+        }
+
+
+
+
 
         private float _currentSpeed;
         private float _runTime;
@@ -48,19 +66,23 @@ namespace Game
             _currentSpeed = _playerStats.InitialSpeed;
             _basicRunner.followSpeed = 20f;
             _runTime = 0f;
+            
         }
 
         public void HandleDeath()
         {
+            SwitchInput(InputMode.Menu);
             _animator.SetTrigger(DeathTrigger);
             _hp--;
             _isRunning = false;
             _currentSpeed = 0f;
             _runTime = 0f;
             _basicRunner.followSpeed = 0f;
+            _deathUIController.ShowDeathUI();
 
             ScoreManager.Instance.SaveScore();
-            SwitchInput(InputMode.Menu);
+            
+            Debug.Log("Player has died.");
         }
 
         public void SwitchAnimation()
@@ -137,7 +159,6 @@ namespace Game
 
         private void OnMovementRecieved(Vector2 movement)
         {
-            Debug.Log($"Player movement received: {movement}");
             _addValue = movement.x / _joystickSlow;
             _targetVector = new Vector2(Mathf.Clamp(_targetVector.x + _addValue, -LevelWidth, LevelWidth), 0);
         }

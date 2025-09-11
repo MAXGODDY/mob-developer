@@ -30,9 +30,6 @@ public class StartLobiControler : MonoBehaviour
         
         _playerController.StartRunning();
         _playerController.SwitchAnimation();
-
-
-        Debug.Log("Start Game");
     }
 
 

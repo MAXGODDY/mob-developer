@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.brogrammist.jsam": "https://github.com/jackyyang09/Simple-Unity-Audio-Manager.git#master",
+    "jp.hadashikick.vcontainer": "https://github.com/hadashiA/VContainer.git?path=VContainer/Assets/VContainer#1.17.0",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.ai.navigation": "2.0.8",
     "com.unity.cinemachine": "3.1.4",
