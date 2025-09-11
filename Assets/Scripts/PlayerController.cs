@@ -45,7 +45,7 @@ namespace Game
 
         private void Start()
         {
-            _currentSpeed = _playerStats.initialSpeed;
+            _currentSpeed = _playerStats.InitialSpeed;
             _basicRunner.followSpeed = 20f;
             _runTime = 0f;
         }
@@ -155,8 +155,8 @@ namespace Game
                 _runTime += Time.deltaTime;
 
                 _currentSpeed = Mathf.Min(
-                    _playerStats.initialSpeed + _playerStats.accelerationRate * _runTime,
-                    _playerStats.maxSpeed
+                    _playerStats.InitialSpeed + _playerStats.AccelerationRate * _runTime,
+                    _playerStats.MaxSpeed
                 );
 
                 _basicRunner.followSpeed = _currentSpeed;
@@ -170,7 +170,7 @@ namespace Game
         {
             _isRunning = true;
             _runTime = 0f;
-            _currentSpeed = _playerStats.initialSpeed;
+            _currentSpeed = _playerStats.InitialSpeed;
             _basicRunner.followSpeed = _currentSpeed;
         }
 

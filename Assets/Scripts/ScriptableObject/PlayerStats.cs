@@ -4,7 +4,11 @@ using UnityEngine;
 public class PlayerStats : ScriptableObject
 {
     [Header("Runner Movement")]
-    public float initialSpeed = 10f;
-    public float maxSpeed = 30f;
-    public float accelerationRate = 0.5f;
+    [SerializeField] private float initialSpeed = 10f;
+    [SerializeField] private float maxSpeed = 30f;
+    [SerializeField] private float accelerationRate = 0.5f;
+
+    public float InitialSpeed => initialSpeed;
+    public float MaxSpeed => maxSpeed;
+    public float AccelerationRate => accelerationRate;
 }
