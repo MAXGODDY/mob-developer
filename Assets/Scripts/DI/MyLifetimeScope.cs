@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class MyLifetimeScope : LifetimeScope
 {
-    [SerializeField] private GameFeedbackManager _gameFeedbackManager;
-    [SerializeField] private DeathUIController _damageOnCollision;
+    [SerializeField]
+    PlayerController PlayerController;
+    [SerializeField]
+    DeathUIController DeathUIController;
 
     protected override void Configure(IContainerBuilder builder)
     {
-        builder.RegisterComponentInHierarchy<GameFeedbackManager>();
-        builder.RegisterComponentInHierarchy<DeathUIController>();
+        builder.RegisterComponent(PlayerController);
+        builder.RegisterComponent(DeathUIController);
     }
 }

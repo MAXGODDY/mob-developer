@@ -2385,8 +2385,8 @@ MonoBehaviour:
     TypeName: 
   autoRun: 1
   autoInjectGameObjects: []
-  _gameFeedbackManager: {fileID: 838800865}
-  _damageOnCollision: {fileID: 838800864}
+  PlayerController: {fileID: 2049143113}
+  DeathUIController: {fileID: 838800864}
 --- !u!1 &810972327
 GameObject:
   m_ObjectHideFlags: 0

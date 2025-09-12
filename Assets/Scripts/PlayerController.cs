@@ -25,19 +25,12 @@ namespace Game
         [SerializeField] public GameObject _player;
 
 
-        private GameFeedbackManager _feedbackManager;
         private DeathUIController _deathUIController;
-
         [Inject]
-        public void Construct(
-        GameFeedbackManager feedbackManager,
-        DeathUIController deathUIController)
+        public void Construct(DeathUIController deathUIController)
         {
-            _feedbackManager = feedbackManager;
             _deathUIController = deathUIController;
         }
-
-
 
 
 
