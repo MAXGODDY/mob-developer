@@ -19,7 +19,7 @@ public class DeathUIController : MonoBehaviour
         _playerController = playerController;
     }
 
-    private void Awake()
+    private void Start()
     {
         _deathCanvas.SetActive(false);
 
