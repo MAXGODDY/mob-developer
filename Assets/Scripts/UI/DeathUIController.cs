@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using VContainer;
 
+
 public class DeathUIController : MonoBehaviour
 {
     [SerializeField] private GameObject _deathCanvas;
@@ -47,6 +48,7 @@ public class DeathUIController : MonoBehaviour
     private void ReturnToMenu()
     {
         _deathCanvas.SetActive(false);
-        _playerController.SwitchInput(PlayerController.InputMode.Menu);
+        _playerController.SwitchInput(InputMode.Menu);
+
     }
 }

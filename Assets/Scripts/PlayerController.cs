@@ -1,10 +1,9 @@
 ﻿using Controllers.Input;
 using Dreamteck.Forever;
-using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using VContainer;
-using static UnityEditor.Experimental.GraphView.GraphView;
+using Game;
+
 
 
 namespace Game
@@ -25,12 +24,7 @@ namespace Game
         [SerializeField] public GameObject _player;
 
 
-        private DeathUIController _deathUIController;
-        [Inject]
-        public void Construct(DeathUIController deathUIController)
-        {
-            _deathUIController = deathUIController;
-        }
+        
 
 
 
@@ -71,7 +65,6 @@ namespace Game
             _currentSpeed = 0f;
             _runTime = 0f;
             _basicRunner.followSpeed = 0f;
-            _deathUIController.ShowDeathUI();
 
             ScoreManager.Instance.SaveScore();
             
@@ -189,11 +182,11 @@ namespace Game
         }
 
 
-        public enum InputMode
-        {
-            Menu,
-            Gameplay
-        }
+        //public enum InputMode
+        //{
+        //    Menu,
+        //    Gameplay
+        //}
         public InputMode CurrentInputMode { get; private set; }
 
         public void SwitchInput(InputMode mode)

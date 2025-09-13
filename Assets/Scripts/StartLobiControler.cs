@@ -1,7 +1,4 @@
-using Controllers.Input;
-using Dreamteck.Forever;
 using Game;
-using TMPro;
 using Unity.Cinemachine;
 using UnityEngine;
 
@@ -19,7 +16,7 @@ public class StartLobiControler : MonoBehaviour
 
     public void StartGame()
     {
-        _playerController.SwitchInput(PlayerController.InputMode.Gameplay);
+        _playerController.SwitchInput(InputMode.Gameplay);
         _setingsCanvas.SetActive(false);
         _lobiCanvas.SetActive(false);
         _mainCanvas.SetActive(true);
