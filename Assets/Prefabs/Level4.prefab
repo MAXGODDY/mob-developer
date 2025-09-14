@@ -8841,6 +8841,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1542802950924766, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8973654884869385859}
+    - targetCorrespondingSourceObject: {fileID: 1542802950924766, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2183313604451639425}
   m_SourcePrefab: {fileID: 100100000, guid: a48c66cea6b296343a9a954ab39c7cdc, type: 3}
 --- !u!33 &6959300941935055692 stripped
 MeshFilter:
@@ -8910,6 +8913,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 085a6b8bd1b5ada4e8c6273c64b39093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2183313604451639425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6982535277746754724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f977b0e9b1fb55a418567c7b6cb52cf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &6986086710054237840 stripped

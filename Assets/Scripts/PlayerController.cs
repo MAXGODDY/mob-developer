@@ -1,8 +1,6 @@
 ﻿using Controllers.Input;
 using Dreamteck.Forever;
 using UnityEngine;
-using VContainer;
-using Game;
 
 
 
@@ -18,7 +16,7 @@ namespace Game
         [SerializeField] public Runner _basicRunner;
         [SerializeField] private float _slideSpeed = 5f;
         [SerializeField] private float _joystickSlow = 2f;
-        [SerializeField] Animator _animator;
+        [SerializeField] public Animator _animator;
         [SerializeField] private GameObject _lobiCanvas;
         [SerializeField] private float _hp = 1f;
         [SerializeField] public GameObject _player;
@@ -68,7 +66,6 @@ namespace Game
 
             ScoreManager.Instance.SaveScore();
             
-            Debug.Log("Player has died.");
         }
 
         public void SwitchAnimation()
@@ -136,6 +133,8 @@ namespace Game
         {
             StartLobiControler script = _lobiCanvas.GetComponent<StartLobiControler>();
             script.StartGame();
+            SwitchAnimation();
+            SwitchInput(InputMode.Gameplay);
         }
 
         private void OnJumpPressed()

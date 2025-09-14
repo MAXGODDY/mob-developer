@@ -9,10 +9,13 @@ public class MyLifetimeScope : LifetimeScope
     PlayerController PlayerController;
     [SerializeField]
     DeathUIController DeathUIController;
+    [SerializeField]
+    StartLobiControler StartLobiControler;
 
     protected override void Configure(IContainerBuilder builder)
     {
         builder.RegisterComponent(PlayerController);
         builder.RegisterComponent(DeathUIController);
+        builder.RegisterComponent(StartLobiControler);
     }
 }

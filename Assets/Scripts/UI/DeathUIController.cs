@@ -42,7 +42,13 @@ public class DeathUIController : MonoBehaviour
     private void ContinueGame()
     {
         _deathCanvas.SetActive(false);
+        var tree = TreeMemory.LastDeadlyTree;
+        if (tree != null)
+        {
+            tree.DisableTree();
+        }
         _playerController.StartRunning();
+
     }
 
     private void ReturnToMenu()

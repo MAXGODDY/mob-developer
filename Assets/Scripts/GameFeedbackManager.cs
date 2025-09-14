@@ -8,7 +8,6 @@ public class GameFeedbackManager : MonoBehaviour
     public void PlayCoinTextFeedbacks()
     {
         coinTextFeedbacks.PlayFeedbacks();
-        Debug.Log("ff");
     }
 
 }
