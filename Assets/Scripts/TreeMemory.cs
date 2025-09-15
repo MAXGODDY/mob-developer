@@ -17,6 +17,6 @@ public class TreeMemory : MonoBehaviour
 
     public void HighlightTree()
     {
-        // Визуальный эффект, например glow или анимация
+        
     }
 }

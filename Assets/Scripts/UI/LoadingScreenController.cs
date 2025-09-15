@@ -4,10 +4,11 @@ using Game;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem.XInput;
+using VContainer;
 
 public class LoadingScreenController : MonoBehaviour
 {
-    [SerializeField] private GameObject _canvas;
+    [SerializeField] public GameObject _canvas;
     [SerializeField] private CanvasGroup _loadingScreen;
     [Header("Coroutione")]
     [SerializeField] private float _fadeOutDuration = 1f;
@@ -20,13 +21,20 @@ public class LoadingScreenController : MonoBehaviour
 
     public float _playerpositionZ = 20;
 
-    public PlayerController PlayerController;
+    private PlayerController _playerController;
+    private StartLobiControler _startLobiControler;
+    [Inject]
+    public void Construct(PlayerController playerController, StartLobiControler startLobiControler)
+    {
+        _playerController = playerController;
+        _startLobiControler = startLobiControler;
+    }
 
     private void Update()
     {
-        if (PlayerController._player.transform.position.z == _playerpositionZ)
+        if (_playerController._player.transform.position.z == _playerpositionZ)
         {
-            PlayerController._basicRunner.followSpeed = 0;
+            _playerController._basicRunner.followSpeed = 0;
         }
     }
 
@@ -35,7 +43,49 @@ public class LoadingScreenController : MonoBehaviour
         StartCoroutine(FadeOut(_fadeOutDuration, _targetAlpha, _loadingScreen));
     }
 
+
     private IEnumerator FadeOut(float duration, float targetAlpha, CanvasGroup loading)
+    {
+        yield return new WaitForSeconds(3.5f);
+
+        float currentTime = 0f;
+        float startAlpha = loading.alpha;
+
+
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, targetAlpha, currentTime / duration);
+            loading.alpha = alpha;
+            if (_playerController._player.transform.position.z > _playerpositionZ)
+            {
+                _playerController._basicRunner.followSpeed = 0;
+                _playerController.SwitchAnimation();
+            }
+            yield return null;
+
+        }
+        _canvas.SetActive(false);
+        _lobiCanvas.SetActive(true);
+    }
+    public void StartGameWithLoading()
+    {
+        _loadingScreen.alpha = _fadeOutDuration;
+        _playerController._basicRunner.followSpeed = 15f;
+        _playerController._isDeath = false;
+        _playerController.SwitchAnimationDeat();
+        StartCoroutine(FadeOut(_fadeOutDuration, _targetAlpha, _loadingScreen));
+    }
+    public void RestartGame()
+    {
+        _loadingScreen.alpha = _fadeOutDuration;
+        _playerController.StartRunning();
+        _playerController.SwitchInput(InputMode.Gameplay);
+        _playerController._isDeath = false;
+        _playerController.SwitchAnimationDeat();
+        StartCoroutine(FadeOut2(_fadeOutDuration, _targetAlpha, _loadingScreen));
+    }
+    private IEnumerator FadeOut2(float duration, float targetAlpha, CanvasGroup loading)
     {
         yield return new WaitForSeconds(3);
 
@@ -48,16 +98,10 @@ public class LoadingScreenController : MonoBehaviour
             currentTime += Time.deltaTime;
             float alpha = Mathf.Lerp(startAlpha, targetAlpha, currentTime / duration);
             loading.alpha = alpha;
-            if (PlayerController._player.transform.position.z > _playerpositionZ)
-            {
-                PlayerController._basicRunner.followSpeed = 0;
-                PlayerController.SwitchAnimation();
-            }
             yield return null;
 
         }
         _canvas.SetActive(false);
-        _lobiCanvas.SetActive(true);
-
+        _startLobiControler._mainCanvas.SetActive(true);
     }
 }

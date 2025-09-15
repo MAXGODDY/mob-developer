@@ -8,12 +8,14 @@ using VContainer.Unity;
 public class DamageOnCollision : MonoBehaviour
 {
     private DeathUIController _deathUIController;
+    private StartLobiControler _startLobiControler;
 
     [Inject]
-    public void Construct(DeathUIController deathUIController)
+    public void Construct(DeathUIController deathUIController, StartLobiControler startLobiControler)
     {
         Debug.Log("[DI] Construct вызван");
         _deathUIController = deathUIController;
+        _startLobiControler = startLobiControler;
     }
 
     private void Awake()
@@ -21,6 +23,7 @@ public class DamageOnCollision : MonoBehaviour
         var container = LifetimeScope.Find<LifetimeScope>();
         var resolver = container.Container.Resolve<IObjectResolver>();
         resolver.Inject(this);
+        
     }
 
 
@@ -32,6 +35,7 @@ public class DamageOnCollision : MonoBehaviour
 
             collision.collider.GetComponentInParent<PlayerController>()?.HandleDeath();
             _deathUIController.ShowDeathUI();
+            _startLobiControler._mainCanvas.SetActive(false);
         }
     }
 }

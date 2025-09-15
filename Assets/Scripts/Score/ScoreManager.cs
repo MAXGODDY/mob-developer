@@ -14,7 +14,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             return;
         }
         Instance = this;

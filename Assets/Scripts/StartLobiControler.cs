@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class StartLobiControler : MonoBehaviour
 {
-    [SerializeField] private GameObject _mainCanvas;
+    [SerializeField] public GameObject _mainCanvas;
     [SerializeField] private GameObject _lobiCanvas;
     [SerializeField] private GameObject _setingsCanvas;
     [SerializeField] private CinemachineVirtualCameraBase _mainCamera;

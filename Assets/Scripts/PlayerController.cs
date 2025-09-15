@@ -29,16 +29,17 @@ namespace Game
         private float _currentSpeed;
         private float _runTime;
         private bool _isRunning = false;
+        public bool _isDeath = false;
 
 
         public const string PlayerTag = "Player";
-        private const string DeathTrigger = "IsDeath";
+        private const string DeathBool = "IsDeath";
 
         private const string RunningBool = "IsRunning";
         private const string JumpingTrigger = "IsJumping";
         private const string idelBool = "idel";
 
-        private Vector2 _targetVector;
+        public Vector2 _targetVector;
 
         private float _addValue;
         private const int LevelWidth = 5;
@@ -57,7 +58,9 @@ namespace Game
         public void HandleDeath()
         {
             SwitchInput(InputMode.Menu);
-            _animator.SetTrigger(DeathTrigger);
+            _animator.SetBool(RunningBool, false);
+            _isDeath = true;
+            SwitchAnimationDeat();
             _hp--;
             _isRunning = false;
             _currentSpeed = 0f;
@@ -79,6 +82,19 @@ namespace Game
             {
                 _animator.SetBool(RunningBool, false);
                 _animator.SetBool(idelBool, true);
+            }
+        }
+        public void SwitchAnimationDeat()
+        {
+            if (_isDeath)
+            {
+                _animator.SetBool(RunningBool, false);
+                _animator.SetBool(DeathBool, true);
+            }
+            else
+            {
+                _animator.SetBool(DeathBool, false);
+                _animator.SetBool(RunningBool, true);
             }
         }
 
@@ -133,7 +149,6 @@ namespace Game
         {
             StartLobiControler script = _lobiCanvas.GetComponent<StartLobiControler>();
             script.StartGame();
-            SwitchAnimation();
             SwitchInput(InputMode.Gameplay);
         }
 
@@ -180,12 +195,6 @@ namespace Game
             _basicRunner.followSpeed = _currentSpeed;
         }
 
-
-        //public enum InputMode
-        //{
-        //    Menu,
-        //    Gameplay
-        //}
         public InputMode CurrentInputMode { get; private set; }
 
         public void SwitchInput(InputMode mode)

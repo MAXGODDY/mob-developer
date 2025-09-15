@@ -27,7 +27,7 @@ public class Coin : MonoBehaviour
             ScoreManager.Instance.AddScore(1);
             
 
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
