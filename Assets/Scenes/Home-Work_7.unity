@@ -888,7 +888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Priority:
     Enabled: 1
-    m_Value: 0
+    m_Value: 9
   OutputChannel: 1
   StandbyUpdate: 2
   m_StreamingVersion: 20241001
@@ -4316,7 +4316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Priority:
     Enabled: 1
-    m_Value: 1
+    m_Value: 11
   OutputChannel: 1
   StandbyUpdate: 2
   m_StreamingVersion: 20241001
@@ -7133,10 +7133,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateMode: 0
-  startPercent: 0
-  startDistance: 0
-  startMode: 0
-  followSpeed: 15
+  startPercent: 0.10899999737739563
+  startDistance: 25
+  startMode: 1
+  followSpeed: 0
   follow: 1
   isPlayer: 1
   loop: 0

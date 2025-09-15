@@ -45,49 +45,40 @@ public class LoadingScreenController : MonoBehaviour
 
 
     private IEnumerator FadeOut(float duration, float targetAlpha, CanvasGroup loading)
-    {
-        yield return new WaitForSeconds(3.5f);
+    { 
+        yield return new WaitForSeconds(9);
 
         float currentTime = 0f;
         float startAlpha = loading.alpha;
-
 
         while (currentTime < duration)
         {
             currentTime += Time.deltaTime;
             float alpha = Mathf.Lerp(startAlpha, targetAlpha, currentTime / duration);
             loading.alpha = alpha;
-            if (_playerController._player.transform.position.z > _playerpositionZ)
-            {
-                _playerController._basicRunner.followSpeed = 0;
-                _playerController.SwitchAnimation();
-            }
             yield return null;
-
         }
+        
         _canvas.SetActive(false);
         _lobiCanvas.SetActive(true);
     }
     public void StartGameWithLoading()
     {
         _loadingScreen.alpha = _fadeOutDuration;
-        _playerController._basicRunner.followSpeed = 15f;
-        _playerController._isDeath = false;
-        _playerController.SwitchAnimationDeat();
+        _playerController.SwitchAnimationDeatOnIdel(true);
+        _startLobiControler.SwitchCamera();
+        
         StartCoroutine(FadeOut(_fadeOutDuration, _targetAlpha, _loadingScreen));
     }
     public void RestartGame()
     {
         _loadingScreen.alpha = _fadeOutDuration;
-        _playerController.StartRunning();
-        _playerController.SwitchInput(InputMode.Gameplay);
-        _playerController._isDeath = false;
-        _playerController.SwitchAnimationDeat();
+        _playerController.SwitchAnimationDeat(false);
         StartCoroutine(FadeOut2(_fadeOutDuration, _targetAlpha, _loadingScreen));
     }
     private IEnumerator FadeOut2(float duration, float targetAlpha, CanvasGroup loading)
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(10);
 
         float currentTime = 0f;
         float startAlpha = loading.alpha;
@@ -103,5 +94,8 @@ public class LoadingScreenController : MonoBehaviour
         }
         _canvas.SetActive(false);
         _startLobiControler._mainCanvas.SetActive(true);
+        _playerController.StartRunning();
+        _playerController.SwitchInput(InputMode.Gameplay);
+        
     }
 }

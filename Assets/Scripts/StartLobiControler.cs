@@ -21,14 +21,25 @@ public class StartLobiControler : MonoBehaviour
         _lobiCanvas.SetActive(false);
         _mainCanvas.SetActive(true);
 
-        _mainCamera.Priority = 11;
-        _lobiCamera.Priority = 9;
+        SwitchCamera();
 
-        
         _playerController.StartRunning();
-        _playerController.SwitchAnimation();
+        _playerController.SwitchAnimationRunning(true);
     }
 
+    public void SwitchCamera()
+    {
+        if (_lobiCamera.Priority == 11)
+        {
+            _mainCamera.Priority = 11;
+            _lobiCamera.Priority = 9;
+        }
+        else
+        {
+            _lobiCamera.Priority = 11;
+            _mainCamera.Priority = 9;
+        }
+    }
 
     public void OpenSetings()
     {

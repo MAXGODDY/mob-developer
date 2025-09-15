@@ -62,8 +62,7 @@ public class DeathUIController : MonoBehaviour
             tree.DisableTree();
         }
         _deathCanvas.SetActive(false);
-        _playerController._isDeath = false;
-        _playerController.SwitchAnimationDeat();
+        _playerController.SwitchAnimationDeat(false);
         _playerController.StartRunning();
         _playerController.SwitchInput(InputMode.Gameplay);
         _startLobiControler._mainCanvas.SetActive(true);

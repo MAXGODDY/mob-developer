@@ -33,6 +33,7 @@ public class DamageOnCollision : MonoBehaviour
         {
             GetComponent<TreeMemory>()?.Remember();
 
+            ScoreManager.Instance.SaveScore();
             collision.collider.GetComponentInParent<PlayerController>()?.HandleDeath();
             _deathUIController.ShowDeathUI();
             _startLobiControler._mainCanvas.SetActive(false);

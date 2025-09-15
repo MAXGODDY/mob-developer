@@ -28,8 +28,6 @@ namespace Game
 
         private float _currentSpeed;
         private float _runTime;
-        private bool _isRunning = false;
-        public bool _isDeath = false;
 
 
         public const string PlayerTag = "Player";
@@ -45,38 +43,36 @@ namespace Game
         private const int LevelWidth = 5;
         public float _playerpositionZ = 20;
         
-
+        private bool _isRunning = false;
 
         private void Start()
         {
             _currentSpeed = _playerStats.InitialSpeed;
-            _basicRunner.followSpeed = 20f;
             _runTime = 0f;
-            
+            SwitchAnimationRunning(false);
         }
 
         public void HandleDeath()
         {
             SwitchInput(InputMode.Menu);
             _animator.SetBool(RunningBool, false);
-            _isDeath = true;
-            SwitchAnimationDeat();
+            SwitchAnimationDeat(true);
             _hp--;
             _isRunning = false;
             _currentSpeed = 0f;
             _runTime = 0f;
             _basicRunner.followSpeed = 0f;
 
-            ScoreManager.Instance.SaveScore();
+            
             
         }
 
-        public void SwitchAnimation()
+        public void SwitchAnimationRunning(bool isRunning)
         {
-            if (_isRunning)
+            if (isRunning)
             {
-                _animator.SetBool(RunningBool, true);
                 _animator.SetBool(idelBool, false);
+                _animator.SetBool(RunningBool, true);
             }
             else
             {
@@ -84,9 +80,9 @@ namespace Game
                 _animator.SetBool(idelBool, true);
             }
         }
-        public void SwitchAnimationDeat()
+        public void SwitchAnimationDeat(bool isDeath)
         {
-            if (_isDeath)
+            if (isDeath)
             {
                 _animator.SetBool(RunningBool, false);
                 _animator.SetBool(DeathBool, true);
@@ -95,6 +91,19 @@ namespace Game
             {
                 _animator.SetBool(DeathBool, false);
                 _animator.SetBool(RunningBool, true);
+            }
+        }
+        public void SwitchAnimationDeatOnIdel(bool isIdel)
+        {
+            if (isIdel)
+            {
+                _animator.SetBool(DeathBool, false);
+                _animator.SetBool(idelBool, true);
+            }
+            else
+            {
+                _animator.SetBool(idelBool, false);
+                _animator.SetBool(DeathBool, true);
             }
         }
 
